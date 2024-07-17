@@ -20,11 +20,14 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
  * The greeting service definition.
  * </pre>
  */
+@javax.annotation.Generated(
+    value = "by gRPC proto compiler (version 1.15.0)",
+    comments = "Source: PowerService.proto")
 public final class GreeterGrpc {
 
   private GreeterGrpc() {}
 
-  public static final String SERVICE_NAME = "service1.Greeter";
+  public static final String SERVICE_NAME = "PowerService.Greeter";
 
   // Static method descriptors that strictly reflect the proto.
   private static volatile io.grpc.MethodDescriptor<smarthotelroom.HelloRequest,
@@ -45,7 +48,7 @@ public final class GreeterGrpc {
               io.grpc.MethodDescriptor.<smarthotelroom.HelloRequest, smarthotelroom.HelloReply>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "service1.Greeter", "SayHello"))
+                  "PowerService.Greeter", "SayHello"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   smarthotelroom.HelloRequest.getDefaultInstance()))

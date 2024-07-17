@@ -6,7 +6,7 @@ option java_outer_classname = "SmartHotelRoomImpl";
 
 
 
-package service1;
+package PowerService;
 
 // The greeting service definition.
 service Greeter {
