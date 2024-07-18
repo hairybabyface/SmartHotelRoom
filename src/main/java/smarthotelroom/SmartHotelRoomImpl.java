@@ -14,6 +14,45 @@ public final class SmartHotelRoomImpl {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
+  
+  // ------------------- AirConService ---------------------------------
+  
+  // AirCon_turnOn
+  static final com.google.protobuf.Descriptors.Descriptor
+  internal_static_AirConService_AirCon_turnOnRequest_descriptor;
+  static final com.google.protobuf.Descriptors.Descriptor
+  internal_static_AirConService_AirCon_turnOnReply_descriptor;
+  static final 
+  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    internal_static_AirConService_AirCon_turnOnRequest_fieldAccessorTable;
+  static final 
+  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    internal_static_AirConService_AirCon_turnOnReply_fieldAccessorTable;
+  
+  //AirCon_turnUp
+  static final com.google.protobuf.Descriptors.Descriptor
+  internal_static_AirConService_AirCon_turnUpRequest_descriptor;
+  static final com.google.protobuf.Descriptors.Descriptor
+  internal_static_AirConService_AirCon_turnUpReply_descriptor;
+  static final 
+  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    internal_static_AirConService_AirCon_turnUpRequest_fieldAccessorTable;
+  static final 
+  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    internal_static_AirConService_AirCon_turnUpReply_fieldAccessorTable;
+  
+  // AirCon_turnDown
+  static final com.google.protobuf.Descriptors.Descriptor
+  internal_static_AirConService_AirCon_turnDownRequest_descriptor;
+  static final com.google.protobuf.Descriptors.Descriptor
+  internal_static_AirConService_AirCon_turnDownReply_descriptor;
+  static final 
+  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    internal_static_AirConService_AirCon_turnDownRequest_fieldAccessorTable;
+  static final 
+  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    internal_static_AirConService_AirCon_turnDownReply_fieldAccessorTable;
+  
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_PowerService_HelloRequest_descriptor;
   static final 
@@ -52,6 +91,51 @@ public final class SmartHotelRoomImpl {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
+    
+    // ----------------------- AirConService --------------------------------
+    
+    // AirCon_turnOn
+    internal_static_AirConService_AirCon_turnOnRequest_descriptor = 
+    		getDescriptor().getMessageTypes().get(0);
+    internal_static_AirConService_AirCon_turnOnReply_descriptor = 
+    		getDescriptor().getMessageTypes().get(0);
+    internal_static_AirConService_AirCon_turnOnRequest_fieldAccessorTable = new
+    	      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+    	        internal_static_AirConService_AirCon_turnOnRequest_descriptor,
+    	        new java.lang.String[] { "Name", });
+    internal_static_AirConService_AirCon_turnOnReply_fieldAccessorTable = new
+  	      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+  	        internal_static_AirConService_AirCon_turnOnReply_descriptor,
+  	        new java.lang.String[] { "Name", });
+    
+     // AirCon_turnUp
+     internal_static_AirConService_AirCon_turnUpRequest_descriptor = 
+    		getDescriptor().getMessageTypes().get(0);
+     internal_static_AirConService_AirCon_turnUpReply_descriptor = 
+    		getDescriptor().getMessageTypes().get(0);
+     internal_static_AirConService_AirCon_turnUpRequest_fieldAccessorTable = new
+    	      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+    	        internal_static_AirConService_AirCon_turnOnRequest_descriptor,
+    	        new java.lang.String[] { "Name", });
+     internal_static_AirConService_AirCon_turnUpReply_fieldAccessorTable = new
+  	      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+  	        internal_static_AirConService_AirCon_turnOnReply_descriptor,
+  	        new java.lang.String[] { "Name", });
+     
+     // AirCon_turnUp
+     internal_static_AirConService_AirCon_turnDownRequest_descriptor = 
+    		getDescriptor().getMessageTypes().get(0);
+     internal_static_AirConService_AirCon_turnDownReply_descriptor = 
+    		getDescriptor().getMessageTypes().get(0);
+     internal_static_AirConService_AirCon_turnDownRequest_fieldAccessorTable = new
+    	      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+    	        internal_static_AirConService_AirCon_turnDownRequest_descriptor,
+    	        new java.lang.String[] { "Name", });
+     internal_static_AirConService_AirCon_turnDownReply_fieldAccessorTable = new
+  	      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+  	        internal_static_AirConService_AirCon_turnOnReply_descriptor,
+  	        new java.lang.String[] { "Name", });
+    
     internal_static_PowerService_HelloRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_PowerService_HelloRequest_fieldAccessorTable = new

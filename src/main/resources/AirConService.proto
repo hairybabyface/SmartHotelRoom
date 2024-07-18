@@ -4,22 +4,36 @@ option java_multiple_files = true;
 option java_package = "smarthotelroom";
 option java_outer_classname = "SmartHotelRoomImpl";
 
-
-
 package AirConService;
 
-// The greeting service definition.
-service Greeter {
-  // Sends a greeting
-  rpc SayHello (HelloRequest) returns (HelloReply) {}
+// Interface exported by the server.
+service AirConService {
+
+  rpc AirCon_turnOn (AirCon_turnOnRequest) returns (AirCon_turnOnReply) {}
+  rpc AirCon_turnUp (AirCon_turnUpRequest) returns (AirCon_turnUpReply) {}
+  rpc AirCon_turnDown (AirCon_turnDownRequest) returns (AirCon_turnDownReply){}
 }
 
-// The request message containing the user's name.
-message HelloRequest {
-  string name = 1;
+message AirCon_turnOnRequest {
+  string text = 1;
 }
 
-// The response message containing the greetings
-message HelloReply {
-  string message = 1;
+message AirCon_turnOnReply {
+  int32 length = 1;
+}
+
+message AirCon_turnUpRequest {
+  string text = 1;
+}
+
+message AirCon_turnUpReply {
+  int32 length = 1;
+}
+
+message AirCon_turnDownRequest {
+  string text = 1;
+}
+
+message AirCon_turnDownReply {
+  int32 length = 1;
 }
