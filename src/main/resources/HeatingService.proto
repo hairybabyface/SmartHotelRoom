@@ -1,25 +1,39 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-option java_package = "smarthotelroom";
+option java_package = "HeatingService";
 option java_outer_classname = "SmartHotelRoomImpl";
-
-
 
 package HeatingService;
 
-// The greeting service definition.
-service Greeter {
-  // Sends a greeting
-  rpc SayHello (HelloRequest) returns (HelloReply) {}
+// Interface exported by the server.
+service HeatingService {
+
+  rpc Heating_turnOn (Heating_turnOnRequest) returns (Heating_turnOnReply) {}
+  rpc Heating_turnUp (Heating_turnUpRequest) returns (Heating_turnUpReply) {}
+  rpc Heating_turnDown (Heating_turnDownRequest) returns (Heating_turnDownReply){}
 }
 
-// The request message containing the user's name.
-message HelloRequest {
-  string name = 1;
+message Heating_turnOnRequest {
+  string text = 1;
 }
 
-// The response message containing the greetings
-message HelloReply {
-  string message = 1;
+message Heating_turnOnReply {
+  int32 length = 1;
+}
+
+message Heating_turnUpRequest {
+  string text = 1;
+}
+
+message Heating_turnUpReply {
+  int32 length = 1;
+}
+
+message Heating_turnDownRequest {
+  string text = 1;
+}
+
+message Heating_turnDownReply {
+  int32 length = 1;
 }

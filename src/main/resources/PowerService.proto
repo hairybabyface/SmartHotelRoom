@@ -1,25 +1,39 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-option java_package = "smarthotelroom";
+option java_package = "PowerService";
 option java_outer_classname = "SmartHotelRoomImpl";
-
-
 
 package PowerService;
 
-// The greeting service definition.
-service Greeter {
-  // Sends a greeting
-  rpc SayHello (HelloRequest) returns (HelloReply) {}
+// Interface exported by the server.
+service PowerService {
+
+  rpc PowerService_turnOn (PowerService_turnOnRequest) returns (PowerService_turnOnReply) {}
+  rpc PowerService_turnOff (PowerService_turnOffRequest) returns (PowerService_turnOffReply) {}
+  rpc Power_cardWarning ( Power_cardWarningRequest) returns (Power_cardWarningReply){}
 }
 
-// The request message containing the user's name.
-message HelloRequest {
-  string name = 1;
+message PowerService_turnOnRequest {
+  string text = 1;
 }
 
-// The response message containing the greetings
-message HelloReply {
-  string message = 1;
+message PowerService_turnOnReply {
+  int32 length = 1;
+}
+
+message PowerService_turnOffRequest {
+  string text = 1;
+}
+
+message PowerService_turnOffReply {
+  int32 length = 1;
+}
+
+message Power_cardWarningRequest {
+  string text = 1;
+}
+
+message Power_cardWarningReply {
+  int32 length = 1;
 }
