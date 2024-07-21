@@ -4,19 +4,19 @@
 package PowerService;
 
 /**
- * Protobuf type {@code PowerService.PowerService_turnOnReply}
+ * Protobuf type {@code PowerService.Power_turnOnRequest}
  */
-public  final class PowerService_turnOnReply extends
+public  final class Power_turnOnRequest extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:PowerService.PowerService_turnOnReply)
-    PowerService_turnOnReplyOrBuilder {
+    // @@protoc_insertion_point(message_implements:PowerService.Power_turnOnRequest)
+    Power_turnOnRequestOrBuilder {
 private static final long serialVersionUID = 0L;
-  // Use PowerService_turnOnReply.newBuilder() to construct.
-  private PowerService_turnOnReply(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+  // Use Power_turnOnRequest.newBuilder() to construct.
+  private Power_turnOnRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private PowerService_turnOnReply() {
-    length_ = 0;
+  private Power_turnOnRequest() {
+    text_ = "";
   }
 
   @java.lang.Override
@@ -24,7 +24,7 @@ private static final long serialVersionUID = 0L;
   getUnknownFields() {
     return this.unknownFields;
   }
-  private PowerService_turnOnReply(
+  private Power_turnOnRequest(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -43,9 +43,10 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
-          case 8: {
+          case 10: {
+            java.lang.String s = input.readStringRequireUtf8();
 
-            length_ = input.readInt32();
+            text_ = s;
             break;
           }
           default: {
@@ -69,24 +70,49 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return PowerService.SmartHotelRoomImpl.internal_static_PowerService_PowerService_turnOnReply_descriptor;
+    return PowerService.SmartHotelRoomImpl.internal_static_PowerService_Power_turnOnRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return PowerService.SmartHotelRoomImpl.internal_static_PowerService_PowerService_turnOnReply_fieldAccessorTable
+    return PowerService.SmartHotelRoomImpl.internal_static_PowerService_Power_turnOnRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            PowerService.PowerService_turnOnReply.class, PowerService.PowerService_turnOnReply.Builder.class);
+            PowerService.Power_turnOnRequest.class, PowerService.Power_turnOnRequest.Builder.class);
   }
 
-  public static final int LENGTH_FIELD_NUMBER = 1;
-  private int length_;
+  public static final int TEXT_FIELD_NUMBER = 1;
+  private volatile java.lang.Object text_;
   /**
-   * <code>int32 length = 1;</code>
+   * <code>string text = 1;</code>
    */
-  public int getLength() {
-    return length_;
+  public java.lang.String getText() {
+    java.lang.Object ref = text_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      text_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string text = 1;</code>
+   */
+  public com.google.protobuf.ByteString
+      getTextBytes() {
+    java.lang.Object ref = text_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      text_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
   }
 
   private byte memoizedIsInitialized = -1;
@@ -103,8 +129,8 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (length_ != 0) {
-      output.writeInt32(1, length_);
+    if (!getTextBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, text_);
     }
     unknownFields.writeTo(output);
   }
@@ -115,9 +141,8 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (length_ != 0) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(1, length_);
+    if (!getTextBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, text_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -129,14 +154,14 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof PowerService.PowerService_turnOnReply)) {
+    if (!(obj instanceof PowerService.Power_turnOnRequest)) {
       return super.equals(obj);
     }
-    PowerService.PowerService_turnOnReply other = (PowerService.PowerService_turnOnReply) obj;
+    PowerService.Power_turnOnRequest other = (PowerService.Power_turnOnRequest) obj;
 
     boolean result = true;
-    result = result && (getLength()
-        == other.getLength());
+    result = result && getText()
+        .equals(other.getText());
     result = result && unknownFields.equals(other.unknownFields);
     return result;
   }
@@ -148,76 +173,76 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + LENGTH_FIELD_NUMBER;
-    hash = (53 * hash) + getLength();
+    hash = (37 * hash) + TEXT_FIELD_NUMBER;
+    hash = (53 * hash) + getText().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
   }
 
-  public static PowerService.PowerService_turnOnReply parseFrom(
+  public static PowerService.Power_turnOnRequest parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static PowerService.PowerService_turnOnReply parseFrom(
+  public static PowerService.Power_turnOnRequest parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static PowerService.PowerService_turnOnReply parseFrom(
+  public static PowerService.Power_turnOnRequest parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static PowerService.PowerService_turnOnReply parseFrom(
+  public static PowerService.Power_turnOnRequest parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static PowerService.PowerService_turnOnReply parseFrom(byte[] data)
+  public static PowerService.Power_turnOnRequest parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static PowerService.PowerService_turnOnReply parseFrom(
+  public static PowerService.Power_turnOnRequest parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static PowerService.PowerService_turnOnReply parseFrom(java.io.InputStream input)
+  public static PowerService.Power_turnOnRequest parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static PowerService.PowerService_turnOnReply parseFrom(
+  public static PowerService.Power_turnOnRequest parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static PowerService.PowerService_turnOnReply parseDelimitedFrom(java.io.InputStream input)
+  public static PowerService.Power_turnOnRequest parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static PowerService.PowerService_turnOnReply parseDelimitedFrom(
+  public static PowerService.Power_turnOnRequest parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static PowerService.PowerService_turnOnReply parseFrom(
+  public static PowerService.Power_turnOnRequest parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static PowerService.PowerService_turnOnReply parseFrom(
+  public static PowerService.Power_turnOnRequest parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -230,7 +255,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(PowerService.PowerService_turnOnReply prototype) {
+  public static Builder newBuilder(PowerService.Power_turnOnRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -246,26 +271,26 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code PowerService.PowerService_turnOnReply}
+   * Protobuf type {@code PowerService.Power_turnOnRequest}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:PowerService.PowerService_turnOnReply)
-      PowerService.PowerService_turnOnReplyOrBuilder {
+      // @@protoc_insertion_point(builder_implements:PowerService.Power_turnOnRequest)
+      PowerService.Power_turnOnRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return PowerService.SmartHotelRoomImpl.internal_static_PowerService_PowerService_turnOnReply_descriptor;
+      return PowerService.SmartHotelRoomImpl.internal_static_PowerService_Power_turnOnRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return PowerService.SmartHotelRoomImpl.internal_static_PowerService_PowerService_turnOnReply_fieldAccessorTable
+      return PowerService.SmartHotelRoomImpl.internal_static_PowerService_Power_turnOnRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              PowerService.PowerService_turnOnReply.class, PowerService.PowerService_turnOnReply.Builder.class);
+              PowerService.Power_turnOnRequest.class, PowerService.Power_turnOnRequest.Builder.class);
     }
 
-    // Construct using PowerService.PowerService_turnOnReply.newBuilder()
+    // Construct using PowerService.Power_turnOnRequest.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -283,7 +308,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      length_ = 0;
+      text_ = "";
 
       return this;
     }
@@ -291,17 +316,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return PowerService.SmartHotelRoomImpl.internal_static_PowerService_PowerService_turnOnReply_descriptor;
+      return PowerService.SmartHotelRoomImpl.internal_static_PowerService_Power_turnOnRequest_descriptor;
     }
 
     @java.lang.Override
-    public PowerService.PowerService_turnOnReply getDefaultInstanceForType() {
-      return PowerService.PowerService_turnOnReply.getDefaultInstance();
+    public PowerService.Power_turnOnRequest getDefaultInstanceForType() {
+      return PowerService.Power_turnOnRequest.getDefaultInstance();
     }
 
     @java.lang.Override
-    public PowerService.PowerService_turnOnReply build() {
-      PowerService.PowerService_turnOnReply result = buildPartial();
+    public PowerService.Power_turnOnRequest build() {
+      PowerService.Power_turnOnRequest result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -309,9 +334,9 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public PowerService.PowerService_turnOnReply buildPartial() {
-      PowerService.PowerService_turnOnReply result = new PowerService.PowerService_turnOnReply(this);
-      result.length_ = length_;
+    public PowerService.Power_turnOnRequest buildPartial() {
+      PowerService.Power_turnOnRequest result = new PowerService.Power_turnOnRequest(this);
+      result.text_ = text_;
       onBuilt();
       return result;
     }
@@ -350,18 +375,19 @@ private static final long serialVersionUID = 0L;
     }
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof PowerService.PowerService_turnOnReply) {
-        return mergeFrom((PowerService.PowerService_turnOnReply)other);
+      if (other instanceof PowerService.Power_turnOnRequest) {
+        return mergeFrom((PowerService.Power_turnOnRequest)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(PowerService.PowerService_turnOnReply other) {
-      if (other == PowerService.PowerService_turnOnReply.getDefaultInstance()) return this;
-      if (other.getLength() != 0) {
-        setLength(other.getLength());
+    public Builder mergeFrom(PowerService.Power_turnOnRequest other) {
+      if (other == PowerService.Power_turnOnRequest.getDefaultInstance()) return this;
+      if (!other.getText().isEmpty()) {
+        text_ = other.text_;
+        onChanged();
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -378,11 +404,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      PowerService.PowerService_turnOnReply parsedMessage = null;
+      PowerService.Power_turnOnRequest parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (PowerService.PowerService_turnOnReply) e.getUnfinishedMessage();
+        parsedMessage = (PowerService.Power_turnOnRequest) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -392,28 +418,71 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int length_ ;
+    private java.lang.Object text_ = "";
     /**
-     * <code>int32 length = 1;</code>
+     * <code>string text = 1;</code>
      */
-    public int getLength() {
-      return length_;
+    public java.lang.String getText() {
+      java.lang.Object ref = text_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        text_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
     }
     /**
-     * <code>int32 length = 1;</code>
+     * <code>string text = 1;</code>
      */
-    public Builder setLength(int value) {
-      
-      length_ = value;
+    public com.google.protobuf.ByteString
+        getTextBytes() {
+      java.lang.Object ref = text_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        text_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string text = 1;</code>
+     */
+    public Builder setText(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      text_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 length = 1;</code>
+     * <code>string text = 1;</code>
      */
-    public Builder clearLength() {
+    public Builder clearText() {
       
-      length_ = 0;
+      text_ = getDefaultInstance().getText();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string text = 1;</code>
+     */
+    public Builder setTextBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      text_ = value;
       onChanged();
       return this;
     }
@@ -430,41 +499,41 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:PowerService.PowerService_turnOnReply)
+    // @@protoc_insertion_point(builder_scope:PowerService.Power_turnOnRequest)
   }
 
-  // @@protoc_insertion_point(class_scope:PowerService.PowerService_turnOnReply)
-  private static final PowerService.PowerService_turnOnReply DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:PowerService.Power_turnOnRequest)
+  private static final PowerService.Power_turnOnRequest DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new PowerService.PowerService_turnOnReply();
+    DEFAULT_INSTANCE = new PowerService.Power_turnOnRequest();
   }
 
-  public static PowerService.PowerService_turnOnReply getDefaultInstance() {
+  public static PowerService.Power_turnOnRequest getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<PowerService_turnOnReply>
-      PARSER = new com.google.protobuf.AbstractParser<PowerService_turnOnReply>() {
+  private static final com.google.protobuf.Parser<Power_turnOnRequest>
+      PARSER = new com.google.protobuf.AbstractParser<Power_turnOnRequest>() {
     @java.lang.Override
-    public PowerService_turnOnReply parsePartialFrom(
+    public Power_turnOnRequest parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return new PowerService_turnOnReply(input, extensionRegistry);
+      return new Power_turnOnRequest(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<PowerService_turnOnReply> parser() {
+  public static com.google.protobuf.Parser<Power_turnOnRequest> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<PowerService_turnOnReply> getParserForType() {
+  public com.google.protobuf.Parser<Power_turnOnRequest> getParserForType() {
     return PARSER;
   }
 
   @java.lang.Override
-  public PowerService.PowerService_turnOnReply getDefaultInstanceForType() {
+  public PowerService.Power_turnOnRequest getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

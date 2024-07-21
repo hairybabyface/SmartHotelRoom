@@ -9,24 +9,24 @@ package PowerService;
 // Interface exported by the server.
 service PowerService {
 
-  rpc PowerService_turnOn (PowerService_turnOnRequest) returns (PowerService_turnOnReply) {}
-  rpc PowerService_turnOff (PowerService_turnOffRequest) returns (PowerService_turnOffReply) {}
+  rpc Power_turnOn (Power_turnOnRequest) returns (Power_turnOnReply) {}
+  rpc Power_turnOff (Power_turnOffRequest) returns (Power_turnOffReply) {}
   rpc Power_cardWarning ( Power_cardWarningRequest) returns (Power_cardWarningReply){}
 }
 
-message PowerService_turnOnRequest {
+message Power_turnOnRequest {
   string text = 1;
 }
 
-message PowerService_turnOnReply {
+message Power_turnOnReply {
   int32 length = 1;
 }
 
-message PowerService_turnOffRequest {
+message Power_turnOffRequest {
   string text = 1;
 }
 
-message PowerService_turnOffReply {
+message Power_turnOffReply {
   int32 length = 1;
 }
 

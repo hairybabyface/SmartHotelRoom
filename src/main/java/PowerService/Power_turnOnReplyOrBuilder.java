@@ -3,8 +3,8 @@
 
 package PowerService;
 
-public interface PowerService_turnDownReplyOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:PowerService.PowerService_turnDownReply)
+public interface Power_turnOnReplyOrBuilder extends
+    // @@protoc_insertion_point(interface_extends:PowerService.Power_turnOnReply)
     com.google.protobuf.MessageOrBuilder {
 
   /**

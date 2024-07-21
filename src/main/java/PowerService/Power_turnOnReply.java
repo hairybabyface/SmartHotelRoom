@@ -4,18 +4,18 @@
 package PowerService;
 
 /**
- * Protobuf type {@code PowerService.PowerService_turnOffReply}
+ * Protobuf type {@code PowerService.Power_turnOnReply}
  */
-public  final class PowerService_turnOffReply extends
+public  final class Power_turnOnReply extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:PowerService.PowerService_turnOffReply)
-    PowerService_turnOffReplyOrBuilder {
+    // @@protoc_insertion_point(message_implements:PowerService.Power_turnOnReply)
+    Power_turnOnReplyOrBuilder {
 private static final long serialVersionUID = 0L;
-  // Use PowerService_turnOffReply.newBuilder() to construct.
-  private PowerService_turnOffReply(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+  // Use Power_turnOnReply.newBuilder() to construct.
+  private Power_turnOnReply(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private PowerService_turnOffReply() {
+  private Power_turnOnReply() {
     length_ = 0;
   }
 
@@ -24,7 +24,7 @@ private static final long serialVersionUID = 0L;
   getUnknownFields() {
     return this.unknownFields;
   }
-  private PowerService_turnOffReply(
+  private Power_turnOnReply(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -69,15 +69,15 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return PowerService.SmartHotelRoomImpl.internal_static_PowerService_PowerService_turnOffReply_descriptor;
+    return PowerService.SmartHotelRoomImpl.internal_static_PowerService_Power_turnOnReply_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return PowerService.SmartHotelRoomImpl.internal_static_PowerService_PowerService_turnOffReply_fieldAccessorTable
+    return PowerService.SmartHotelRoomImpl.internal_static_PowerService_Power_turnOnReply_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            PowerService.PowerService_turnOffReply.class, PowerService.PowerService_turnOffReply.Builder.class);
+            PowerService.Power_turnOnReply.class, PowerService.Power_turnOnReply.Builder.class);
   }
 
   public static final int LENGTH_FIELD_NUMBER = 1;
@@ -129,10 +129,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof PowerService.PowerService_turnOffReply)) {
+    if (!(obj instanceof PowerService.Power_turnOnReply)) {
       return super.equals(obj);
     }
-    PowerService.PowerService_turnOffReply other = (PowerService.PowerService_turnOffReply) obj;
+    PowerService.Power_turnOnReply other = (PowerService.Power_turnOnReply) obj;
 
     boolean result = true;
     result = result && (getLength()
@@ -155,69 +155,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static PowerService.PowerService_turnOffReply parseFrom(
+  public static PowerService.Power_turnOnReply parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static PowerService.PowerService_turnOffReply parseFrom(
+  public static PowerService.Power_turnOnReply parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static PowerService.PowerService_turnOffReply parseFrom(
+  public static PowerService.Power_turnOnReply parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static PowerService.PowerService_turnOffReply parseFrom(
+  public static PowerService.Power_turnOnReply parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static PowerService.PowerService_turnOffReply parseFrom(byte[] data)
+  public static PowerService.Power_turnOnReply parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static PowerService.PowerService_turnOffReply parseFrom(
+  public static PowerService.Power_turnOnReply parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static PowerService.PowerService_turnOffReply parseFrom(java.io.InputStream input)
+  public static PowerService.Power_turnOnReply parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static PowerService.PowerService_turnOffReply parseFrom(
+  public static PowerService.Power_turnOnReply parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static PowerService.PowerService_turnOffReply parseDelimitedFrom(java.io.InputStream input)
+  public static PowerService.Power_turnOnReply parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static PowerService.PowerService_turnOffReply parseDelimitedFrom(
+  public static PowerService.Power_turnOnReply parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static PowerService.PowerService_turnOffReply parseFrom(
+  public static PowerService.Power_turnOnReply parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static PowerService.PowerService_turnOffReply parseFrom(
+  public static PowerService.Power_turnOnReply parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -230,7 +230,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(PowerService.PowerService_turnOffReply prototype) {
+  public static Builder newBuilder(PowerService.Power_turnOnReply prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -246,26 +246,26 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code PowerService.PowerService_turnOffReply}
+   * Protobuf type {@code PowerService.Power_turnOnReply}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:PowerService.PowerService_turnOffReply)
-      PowerService.PowerService_turnOffReplyOrBuilder {
+      // @@protoc_insertion_point(builder_implements:PowerService.Power_turnOnReply)
+      PowerService.Power_turnOnReplyOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return PowerService.SmartHotelRoomImpl.internal_static_PowerService_PowerService_turnOffReply_descriptor;
+      return PowerService.SmartHotelRoomImpl.internal_static_PowerService_Power_turnOnReply_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return PowerService.SmartHotelRoomImpl.internal_static_PowerService_PowerService_turnOffReply_fieldAccessorTable
+      return PowerService.SmartHotelRoomImpl.internal_static_PowerService_Power_turnOnReply_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              PowerService.PowerService_turnOffReply.class, PowerService.PowerService_turnOffReply.Builder.class);
+              PowerService.Power_turnOnReply.class, PowerService.Power_turnOnReply.Builder.class);
     }
 
-    // Construct using PowerService.PowerService_turnOffReply.newBuilder()
+    // Construct using PowerService.Power_turnOnReply.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -291,17 +291,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return PowerService.SmartHotelRoomImpl.internal_static_PowerService_PowerService_turnOffReply_descriptor;
+      return PowerService.SmartHotelRoomImpl.internal_static_PowerService_Power_turnOnReply_descriptor;
     }
 
     @java.lang.Override
-    public PowerService.PowerService_turnOffReply getDefaultInstanceForType() {
-      return PowerService.PowerService_turnOffReply.getDefaultInstance();
+    public PowerService.Power_turnOnReply getDefaultInstanceForType() {
+      return PowerService.Power_turnOnReply.getDefaultInstance();
     }
 
     @java.lang.Override
-    public PowerService.PowerService_turnOffReply build() {
-      PowerService.PowerService_turnOffReply result = buildPartial();
+    public PowerService.Power_turnOnReply build() {
+      PowerService.Power_turnOnReply result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -309,8 +309,8 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public PowerService.PowerService_turnOffReply buildPartial() {
-      PowerService.PowerService_turnOffReply result = new PowerService.PowerService_turnOffReply(this);
+    public PowerService.Power_turnOnReply buildPartial() {
+      PowerService.Power_turnOnReply result = new PowerService.Power_turnOnReply(this);
       result.length_ = length_;
       onBuilt();
       return result;
@@ -350,16 +350,16 @@ private static final long serialVersionUID = 0L;
     }
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof PowerService.PowerService_turnOffReply) {
-        return mergeFrom((PowerService.PowerService_turnOffReply)other);
+      if (other instanceof PowerService.Power_turnOnReply) {
+        return mergeFrom((PowerService.Power_turnOnReply)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(PowerService.PowerService_turnOffReply other) {
-      if (other == PowerService.PowerService_turnOffReply.getDefaultInstance()) return this;
+    public Builder mergeFrom(PowerService.Power_turnOnReply other) {
+      if (other == PowerService.Power_turnOnReply.getDefaultInstance()) return this;
       if (other.getLength() != 0) {
         setLength(other.getLength());
       }
@@ -378,11 +378,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      PowerService.PowerService_turnOffReply parsedMessage = null;
+      PowerService.Power_turnOnReply parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (PowerService.PowerService_turnOffReply) e.getUnfinishedMessage();
+        parsedMessage = (PowerService.Power_turnOnReply) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -430,41 +430,41 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:PowerService.PowerService_turnOffReply)
+    // @@protoc_insertion_point(builder_scope:PowerService.Power_turnOnReply)
   }
 
-  // @@protoc_insertion_point(class_scope:PowerService.PowerService_turnOffReply)
-  private static final PowerService.PowerService_turnOffReply DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:PowerService.Power_turnOnReply)
+  private static final PowerService.Power_turnOnReply DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new PowerService.PowerService_turnOffReply();
+    DEFAULT_INSTANCE = new PowerService.Power_turnOnReply();
   }
 
-  public static PowerService.PowerService_turnOffReply getDefaultInstance() {
+  public static PowerService.Power_turnOnReply getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<PowerService_turnOffReply>
-      PARSER = new com.google.protobuf.AbstractParser<PowerService_turnOffReply>() {
+  private static final com.google.protobuf.Parser<Power_turnOnReply>
+      PARSER = new com.google.protobuf.AbstractParser<Power_turnOnReply>() {
     @java.lang.Override
-    public PowerService_turnOffReply parsePartialFrom(
+    public Power_turnOnReply parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return new PowerService_turnOffReply(input, extensionRegistry);
+      return new Power_turnOnReply(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<PowerService_turnOffReply> parser() {
+  public static com.google.protobuf.Parser<Power_turnOnReply> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<PowerService_turnOffReply> getParserForType() {
+  public com.google.protobuf.Parser<Power_turnOnReply> getParserForType() {
     return PARSER;
   }
 
   @java.lang.Override
-  public PowerService.PowerService_turnOffReply getDefaultInstanceForType() {
+  public PowerService.Power_turnOnReply getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

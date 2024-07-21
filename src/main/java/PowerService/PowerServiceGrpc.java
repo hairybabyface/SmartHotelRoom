@@ -30,68 +30,68 @@ public final class PowerServiceGrpc {
   public static final String SERVICE_NAME = "PowerService.PowerService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<PowerService.PowerService_turnOnRequest,
-      PowerService.PowerService_turnOnReply> getPowerServiceTurnOnMethod;
+  private static volatile io.grpc.MethodDescriptor<PowerService.Power_turnOnRequest,
+      PowerService.Power_turnOnReply> getPowerTurnOnMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "PowerService_turnOn",
-      requestType = PowerService.PowerService_turnOnRequest.class,
-      responseType = PowerService.PowerService_turnOnReply.class,
+      fullMethodName = SERVICE_NAME + '/' + "Power_turnOn",
+      requestType = PowerService.Power_turnOnRequest.class,
+      responseType = PowerService.Power_turnOnReply.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<PowerService.PowerService_turnOnRequest,
-      PowerService.PowerService_turnOnReply> getPowerServiceTurnOnMethod() {
-    io.grpc.MethodDescriptor<PowerService.PowerService_turnOnRequest, PowerService.PowerService_turnOnReply> getPowerServiceTurnOnMethod;
-    if ((getPowerServiceTurnOnMethod = PowerServiceGrpc.getPowerServiceTurnOnMethod) == null) {
+  public static io.grpc.MethodDescriptor<PowerService.Power_turnOnRequest,
+      PowerService.Power_turnOnReply> getPowerTurnOnMethod() {
+    io.grpc.MethodDescriptor<PowerService.Power_turnOnRequest, PowerService.Power_turnOnReply> getPowerTurnOnMethod;
+    if ((getPowerTurnOnMethod = PowerServiceGrpc.getPowerTurnOnMethod) == null) {
       synchronized (PowerServiceGrpc.class) {
-        if ((getPowerServiceTurnOnMethod = PowerServiceGrpc.getPowerServiceTurnOnMethod) == null) {
-          PowerServiceGrpc.getPowerServiceTurnOnMethod = getPowerServiceTurnOnMethod = 
-              io.grpc.MethodDescriptor.<PowerService.PowerService_turnOnRequest, PowerService.PowerService_turnOnReply>newBuilder()
+        if ((getPowerTurnOnMethod = PowerServiceGrpc.getPowerTurnOnMethod) == null) {
+          PowerServiceGrpc.getPowerTurnOnMethod = getPowerTurnOnMethod = 
+              io.grpc.MethodDescriptor.<PowerService.Power_turnOnRequest, PowerService.Power_turnOnReply>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "PowerService.PowerService", "PowerService_turnOn"))
+                  "PowerService.PowerService", "Power_turnOn"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  PowerService.PowerService_turnOnRequest.getDefaultInstance()))
+                  PowerService.Power_turnOnRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  PowerService.PowerService_turnOnReply.getDefaultInstance()))
-                  .setSchemaDescriptor(new PowerServiceMethodDescriptorSupplier("PowerService_turnOn"))
+                  PowerService.Power_turnOnReply.getDefaultInstance()))
+                  .setSchemaDescriptor(new PowerServiceMethodDescriptorSupplier("Power_turnOn"))
                   .build();
           }
         }
      }
-     return getPowerServiceTurnOnMethod;
+     return getPowerTurnOnMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<PowerService.PowerService_turnOffRequest,
-      PowerService.PowerService_turnOffReply> getPowerServiceTurnOffMethod;
+  private static volatile io.grpc.MethodDescriptor<PowerService.Power_turnOffRequest,
+      PowerService.Power_turnOffReply> getPowerTurnOffMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "PowerService_turnOff",
-      requestType = PowerService.PowerService_turnOffRequest.class,
-      responseType = PowerService.PowerService_turnOffReply.class,
+      fullMethodName = SERVICE_NAME + '/' + "Power_turnOff",
+      requestType = PowerService.Power_turnOffRequest.class,
+      responseType = PowerService.Power_turnOffReply.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<PowerService.PowerService_turnOffRequest,
-      PowerService.PowerService_turnOffReply> getPowerServiceTurnOffMethod() {
-    io.grpc.MethodDescriptor<PowerService.PowerService_turnOffRequest, PowerService.PowerService_turnOffReply> getPowerServiceTurnOffMethod;
-    if ((getPowerServiceTurnOffMethod = PowerServiceGrpc.getPowerServiceTurnOffMethod) == null) {
+  public static io.grpc.MethodDescriptor<PowerService.Power_turnOffRequest,
+      PowerService.Power_turnOffReply> getPowerTurnOffMethod() {
+    io.grpc.MethodDescriptor<PowerService.Power_turnOffRequest, PowerService.Power_turnOffReply> getPowerTurnOffMethod;
+    if ((getPowerTurnOffMethod = PowerServiceGrpc.getPowerTurnOffMethod) == null) {
       synchronized (PowerServiceGrpc.class) {
-        if ((getPowerServiceTurnOffMethod = PowerServiceGrpc.getPowerServiceTurnOffMethod) == null) {
-          PowerServiceGrpc.getPowerServiceTurnOffMethod = getPowerServiceTurnOffMethod = 
-              io.grpc.MethodDescriptor.<PowerService.PowerService_turnOffRequest, PowerService.PowerService_turnOffReply>newBuilder()
+        if ((getPowerTurnOffMethod = PowerServiceGrpc.getPowerTurnOffMethod) == null) {
+          PowerServiceGrpc.getPowerTurnOffMethod = getPowerTurnOffMethod = 
+              io.grpc.MethodDescriptor.<PowerService.Power_turnOffRequest, PowerService.Power_turnOffReply>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "PowerService.PowerService", "PowerService_turnOff"))
+                  "PowerService.PowerService", "Power_turnOff"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  PowerService.PowerService_turnOffRequest.getDefaultInstance()))
+                  PowerService.Power_turnOffRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  PowerService.PowerService_turnOffReply.getDefaultInstance()))
-                  .setSchemaDescriptor(new PowerServiceMethodDescriptorSupplier("PowerService_turnOff"))
+                  PowerService.Power_turnOffReply.getDefaultInstance()))
+                  .setSchemaDescriptor(new PowerServiceMethodDescriptorSupplier("Power_turnOff"))
                   .build();
           }
         }
      }
-     return getPowerServiceTurnOffMethod;
+     return getPowerTurnOffMethod;
   }
 
   private static volatile io.grpc.MethodDescriptor<PowerService.Power_cardWarningRequest,
@@ -158,16 +158,16 @@ public final class PowerServiceGrpc {
 
     /**
      */
-    public void powerServiceTurnOn(PowerService.PowerService_turnOnRequest request,
-        io.grpc.stub.StreamObserver<PowerService.PowerService_turnOnReply> responseObserver) {
-      asyncUnimplementedUnaryCall(getPowerServiceTurnOnMethod(), responseObserver);
+    public void powerTurnOn(PowerService.Power_turnOnRequest request,
+        io.grpc.stub.StreamObserver<PowerService.Power_turnOnReply> responseObserver) {
+      asyncUnimplementedUnaryCall(getPowerTurnOnMethod(), responseObserver);
     }
 
     /**
      */
-    public void powerServiceTurnOff(PowerService.PowerService_turnOffRequest request,
-        io.grpc.stub.StreamObserver<PowerService.PowerService_turnOffReply> responseObserver) {
-      asyncUnimplementedUnaryCall(getPowerServiceTurnOffMethod(), responseObserver);
+    public void powerTurnOff(PowerService.Power_turnOffRequest request,
+        io.grpc.stub.StreamObserver<PowerService.Power_turnOffReply> responseObserver) {
+      asyncUnimplementedUnaryCall(getPowerTurnOffMethod(), responseObserver);
     }
 
     /**
@@ -180,19 +180,19 @@ public final class PowerServiceGrpc {
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
-            getPowerServiceTurnOnMethod(),
+            getPowerTurnOnMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                PowerService.PowerService_turnOnRequest,
-                PowerService.PowerService_turnOnReply>(
-                  this, METHODID_POWER_SERVICE_TURN_ON)))
+                PowerService.Power_turnOnRequest,
+                PowerService.Power_turnOnReply>(
+                  this, METHODID_POWER_TURN_ON)))
           .addMethod(
-            getPowerServiceTurnOffMethod(),
+            getPowerTurnOffMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                PowerService.PowerService_turnOffRequest,
-                PowerService.PowerService_turnOffReply>(
-                  this, METHODID_POWER_SERVICE_TURN_OFF)))
+                PowerService.Power_turnOffRequest,
+                PowerService.Power_turnOffReply>(
+                  this, METHODID_POWER_TURN_OFF)))
           .addMethod(
             getPowerCardWarningMethod(),
             asyncUnaryCall(
@@ -227,18 +227,18 @@ public final class PowerServiceGrpc {
 
     /**
      */
-    public void powerServiceTurnOn(PowerService.PowerService_turnOnRequest request,
-        io.grpc.stub.StreamObserver<PowerService.PowerService_turnOnReply> responseObserver) {
+    public void powerTurnOn(PowerService.Power_turnOnRequest request,
+        io.grpc.stub.StreamObserver<PowerService.Power_turnOnReply> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getPowerServiceTurnOnMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getPowerTurnOnMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void powerServiceTurnOff(PowerService.PowerService_turnOffRequest request,
-        io.grpc.stub.StreamObserver<PowerService.PowerService_turnOffReply> responseObserver) {
+    public void powerTurnOff(PowerService.Power_turnOffRequest request,
+        io.grpc.stub.StreamObserver<PowerService.Power_turnOffReply> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getPowerServiceTurnOffMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getPowerTurnOffMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
@@ -273,16 +273,16 @@ public final class PowerServiceGrpc {
 
     /**
      */
-    public PowerService.PowerService_turnOnReply powerServiceTurnOn(PowerService.PowerService_turnOnRequest request) {
+    public PowerService.Power_turnOnReply powerTurnOn(PowerService.Power_turnOnRequest request) {
       return blockingUnaryCall(
-          getChannel(), getPowerServiceTurnOnMethod(), getCallOptions(), request);
+          getChannel(), getPowerTurnOnMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public PowerService.PowerService_turnOffReply powerServiceTurnOff(PowerService.PowerService_turnOffRequest request) {
+    public PowerService.Power_turnOffReply powerTurnOff(PowerService.Power_turnOffRequest request) {
       return blockingUnaryCall(
-          getChannel(), getPowerServiceTurnOffMethod(), getCallOptions(), request);
+          getChannel(), getPowerTurnOffMethod(), getCallOptions(), request);
     }
 
     /**
@@ -316,18 +316,18 @@ public final class PowerServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<PowerService.PowerService_turnOnReply> powerServiceTurnOn(
-        PowerService.PowerService_turnOnRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<PowerService.Power_turnOnReply> powerTurnOn(
+        PowerService.Power_turnOnRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getPowerServiceTurnOnMethod(), getCallOptions()), request);
+          getChannel().newCall(getPowerTurnOnMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<PowerService.PowerService_turnOffReply> powerServiceTurnOff(
-        PowerService.PowerService_turnOffRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<PowerService.Power_turnOffReply> powerTurnOff(
+        PowerService.Power_turnOffRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getPowerServiceTurnOffMethod(), getCallOptions()), request);
+          getChannel().newCall(getPowerTurnOffMethod(), getCallOptions()), request);
     }
 
     /**
@@ -339,8 +339,8 @@ public final class PowerServiceGrpc {
     }
   }
 
-  private static final int METHODID_POWER_SERVICE_TURN_ON = 0;
-  private static final int METHODID_POWER_SERVICE_TURN_OFF = 1;
+  private static final int METHODID_POWER_TURN_ON = 0;
+  private static final int METHODID_POWER_TURN_OFF = 1;
   private static final int METHODID_POWER_CARD_WARNING = 2;
 
   private static final class MethodHandlers<Req, Resp> implements
@@ -360,13 +360,13 @@ public final class PowerServiceGrpc {
     @java.lang.SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
-        case METHODID_POWER_SERVICE_TURN_ON:
-          serviceImpl.powerServiceTurnOn((PowerService.PowerService_turnOnRequest) request,
-              (io.grpc.stub.StreamObserver<PowerService.PowerService_turnOnReply>) responseObserver);
+        case METHODID_POWER_TURN_ON:
+          serviceImpl.powerTurnOn((PowerService.Power_turnOnRequest) request,
+              (io.grpc.stub.StreamObserver<PowerService.Power_turnOnReply>) responseObserver);
           break;
-        case METHODID_POWER_SERVICE_TURN_OFF:
-          serviceImpl.powerServiceTurnOff((PowerService.PowerService_turnOffRequest) request,
-              (io.grpc.stub.StreamObserver<PowerService.PowerService_turnOffReply>) responseObserver);
+        case METHODID_POWER_TURN_OFF:
+          serviceImpl.powerTurnOff((PowerService.Power_turnOffRequest) request,
+              (io.grpc.stub.StreamObserver<PowerService.Power_turnOffReply>) responseObserver);
           break;
         case METHODID_POWER_CARD_WARNING:
           serviceImpl.powerCardWarning((PowerService.Power_cardWarningRequest) request,
@@ -433,8 +433,8 @@ public final class PowerServiceGrpc {
         if (result == null) {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new PowerServiceFileDescriptorSupplier())
-              .addMethod(getPowerServiceTurnOnMethod())
-              .addMethod(getPowerServiceTurnOffMethod())
+              .addMethod(getPowerTurnOnMethod())
+              .addMethod(getPowerTurnOffMethod())
               .addMethod(getPowerCardWarningMethod())
               .build();
         }

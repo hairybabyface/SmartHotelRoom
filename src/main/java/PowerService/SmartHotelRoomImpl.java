@@ -15,25 +15,25 @@ public final class SmartHotelRoomImpl {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_PowerService_PowerService_turnOnRequest_descriptor;
+    internal_static_PowerService_Power_turnOnRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_PowerService_PowerService_turnOnRequest_fieldAccessorTable;
+      internal_static_PowerService_Power_turnOnRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_PowerService_PowerService_turnOnReply_descriptor;
+    internal_static_PowerService_Power_turnOnReply_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_PowerService_PowerService_turnOnReply_fieldAccessorTable;
+      internal_static_PowerService_Power_turnOnReply_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_PowerService_PowerService_turnOffRequest_descriptor;
+    internal_static_PowerService_Power_turnOffRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_PowerService_PowerService_turnOffRequest_fieldAccessorTable;
+      internal_static_PowerService_Power_turnOffRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_PowerService_PowerService_turnOffReply_descriptor;
+    internal_static_PowerService_Power_turnOffReply_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_PowerService_PowerService_turnOffReply_fieldAccessorTable;
+      internal_static_PowerService_Power_turnOffReply_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_PowerService_Power_cardWarningRequest_descriptor;
   static final 
@@ -53,23 +53,22 @@ public final class SmartHotelRoomImpl {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022PowerService.proto\022\014PowerService\"*\n\032Po" +
-      "werService_turnOnRequest\022\014\n\004text\030\001 \001(\t\"*" +
-      "\n\030PowerService_turnOnReply\022\016\n\006length\030\001 \001" +
-      "(\005\"+\n\033PowerService_turnOffRequest\022\014\n\004tex" +
-      "t\030\001 \001(\t\"+\n\031PowerService_turnOffReply\022\016\n\006" +
-      "length\030\001 \001(\005\"(\n\030Power_cardWarningRequest" +
-      "\022\014\n\004text\030\001 \001(\t\"(\n\026Power_cardWarningReply" +
-      "\022\016\n\006length\030\001 \001(\0052\314\002\n\014PowerService\022i\n\023Pow" +
-      "erService_turnOn\022(.PowerService.PowerSer" +
-      "vice_turnOnRequest\032&.PowerService.PowerS" +
-      "ervice_turnOnReply\"\000\022l\n\024PowerService_tur" +
-      "nOff\022).PowerService.PowerService_turnOff" +
-      "Request\032\'.PowerService.PowerService_turn" +
-      "OffReply\"\000\022c\n\021Power_cardWarning\022&.PowerS" +
-      "ervice.Power_cardWarningRequest\032$.PowerS" +
-      "ervice.Power_cardWarningReply\"\000B$\n\014Power" +
-      "ServiceB\022SmartHotelRoomImplP\001b\006proto3"
+      "\n\022PowerService.proto\022\014PowerService\"#\n\023Po" +
+      "wer_turnOnRequest\022\014\n\004text\030\001 \001(\t\"#\n\021Power" +
+      "_turnOnReply\022\016\n\006length\030\001 \001(\005\"$\n\024Power_tu" +
+      "rnOffRequest\022\014\n\004text\030\001 \001(\t\"$\n\022Power_turn" +
+      "OffReply\022\016\n\006length\030\001 \001(\005\"(\n\030Power_cardWa" +
+      "rningRequest\022\014\n\004text\030\001 \001(\t\"(\n\026Power_card" +
+      "WarningReply\022\016\n\006length\030\001 \001(\0052\242\002\n\014PowerSe" +
+      "rvice\022T\n\014Power_turnOn\022!.PowerService.Pow" +
+      "er_turnOnRequest\032\037.PowerService.Power_tu" +
+      "rnOnReply\"\000\022W\n\rPower_turnOff\022\".PowerServ" +
+      "ice.Power_turnOffRequest\032 .PowerService." +
+      "Power_turnOffReply\"\000\022c\n\021Power_cardWarnin" +
+      "g\022&.PowerService.Power_cardWarningReques" +
+      "t\032$.PowerService.Power_cardWarningReply\"" +
+      "\000B$\n\014PowerServiceB\022SmartHotelRoomImplP\001b" +
+      "\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -83,29 +82,29 @@ public final class SmartHotelRoomImpl {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_PowerService_PowerService_turnOnRequest_descriptor =
+    internal_static_PowerService_Power_turnOnRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_PowerService_PowerService_turnOnRequest_fieldAccessorTable = new
+    internal_static_PowerService_Power_turnOnRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_PowerService_PowerService_turnOnRequest_descriptor,
+        internal_static_PowerService_Power_turnOnRequest_descriptor,
         new java.lang.String[] { "Text", });
-    internal_static_PowerService_PowerService_turnOnReply_descriptor =
+    internal_static_PowerService_Power_turnOnReply_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_PowerService_PowerService_turnOnReply_fieldAccessorTable = new
+    internal_static_PowerService_Power_turnOnReply_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_PowerService_PowerService_turnOnReply_descriptor,
+        internal_static_PowerService_Power_turnOnReply_descriptor,
         new java.lang.String[] { "Length", });
-    internal_static_PowerService_PowerService_turnOffRequest_descriptor =
+    internal_static_PowerService_Power_turnOffRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_PowerService_PowerService_turnOffRequest_fieldAccessorTable = new
+    internal_static_PowerService_Power_turnOffRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_PowerService_PowerService_turnOffRequest_descriptor,
+        internal_static_PowerService_Power_turnOffRequest_descriptor,
         new java.lang.String[] { "Text", });
-    internal_static_PowerService_PowerService_turnOffReply_descriptor =
+    internal_static_PowerService_Power_turnOffReply_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_PowerService_PowerService_turnOffReply_fieldAccessorTable = new
+    internal_static_PowerService_Power_turnOffReply_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_PowerService_PowerService_turnOffReply_descriptor,
+        internal_static_PowerService_Power_turnOffReply_descriptor,
         new java.lang.String[] { "Length", });
     internal_static_PowerService_Power_cardWarningRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);

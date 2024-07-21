@@ -14,10 +14,9 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
-/*import ds.service1.Service1Grpc;
-import ds.service2.Service2Grpc;
-import ds.service3.Service3Grpc;
-import ds.service4.Service4Grpc;*/
+import AirConditioningService.AirConServiceGrpc;
+import HeatingService.HeatingServiceGrpc;
+import PowerService.PowerServiceGrpc;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 
@@ -193,15 +192,15 @@ public class ControllerGUI implements ActionListener{
 			 * 
 			 */
 			ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50051).usePlaintext().build();
-			Service1Grpc.Service1BlockingStub blockingStub = Service1Grpc.newBlockingStub(channel);
+			AirConServiceGrpc.AirConServiceBlockingStub blockingStub = AirConServiceGrpc.newBlockingStub(channel);
 
 			//preparing message to send
-			ds.service1.RequestMessage request = ds.service1.RequestMessage.newBuilder().setText(entry1.getText()).build();
+			AirConditioningService.AirCon_turnOnRequest request = AirConditioningService.AirCon_turnOnRequest.newBuilder().setText(entry1.getText()).build();
 
-			//retreving reply from service
-			ds.service1.ResponseMessage response = blockingStub.service1Do(request);
+			//retrieving reply from service
+			AirConditioningService.AirCon_turnOnReply reply = blockingStub.airConTurnOn(request);
 
-			reply1.setText( String.valueOf( response.getLength()) );
+			reply1.setText( String.valueOf( reply.getLength()) );
 		
 		}else if (label.equals("Invoke Service 2")) {
 			System.out.println("service 2 to be invoked ...");
@@ -211,15 +210,15 @@ public class ControllerGUI implements ActionListener{
 			 * 
 			 */
 			ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50052).usePlaintext().build();
-			Service2Grpc.Service2BlockingStub blockingStub = Service2Grpc.newBlockingStub(channel);
+			HeatingServiceGrpc.HeatingServiceBlockingStub blockingStub = HeatingServiceGrpc.newBlockingStub(channel);
 
 			//preparing message to send
-			ds.service2.RequestMessage request = ds.service2.RequestMessage.newBuilder().setText(entry2.getText()).build();
+			HeatingService.Heating_turnOnRequest request = HeatingService.Heating_turnOnRequest.newBuilder().setText(entry2.getText()).build();
 
-			//retreving reply from service
-			ds.service2.ResponseMessage response = blockingStub.service2Do(request);
+			//retrieving reply from service
+			HeatingService.Heating_turnOnReply reply = blockingStub.heatingTurnOn(request);
 
-			reply2.setText( String.valueOf( response.getLength()) );
+			reply2.setText( String.valueOf( reply.getLength()) );
 			
 		}else if (label.equals("Invoke Service 3")) {
 			System.out.println("service 3 to be invoked ...");
@@ -229,33 +228,15 @@ public class ControllerGUI implements ActionListener{
 			 * 
 			 */
 			ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50053).usePlaintext().build();
-			Service3Grpc.Service3BlockingStub blockingStub = Service3Grpc.newBlockingStub(channel);
+			PowerServiceGrpc.PowerServiceBlockingStub blockingStub = PowerServiceGrpc.newBlockingStub(channel);
 
 			//preparing message to send
-			ds.service3.RequestMessage request = ds.service3.RequestMessage.newBuilder().setText(entry3.getText()).build();
+			PowerService.Power_turnOnRequest request = PowerService.Power_turnOnRequest.newBuilder().setText(entry3.getText()).build();
 
-			//retreving reply from service
-			ds.service3.ResponseMessage response = blockingStub.service3Do(request);
+			//retrieving reply from service
+			PowerService.Power_turnOnReply reply = blockingStub.powerTurnOn(request);
 
-			reply3.setText( String.valueOf( response.getLength()) );
-		
-		}else if (label.equals("Invoke Service 4")) {
-			System.out.println("service 4 to be invoked ...");
-
-		
-			/*
-			 * 
-			 */
-			ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50054).usePlaintext().build();
-			Service4Grpc.Service4BlockingStub blockingStub = Service4Grpc.newBlockingStub(channel);
-
-			//preparing message to send
-			ds.service4.RequestMessage request = ds.service4.RequestMessage.newBuilder().setText(entry4.getText()).build();
-
-			//retreving reply from service
-			ds.service4.ResponseMessage response = blockingStub.service4Do(request);
-
-			reply4.setText( String.valueOf( response.getLength()) );
+			reply3.setText( String.valueOf( reply.getLength()) );
 		
 		}else{
 			
