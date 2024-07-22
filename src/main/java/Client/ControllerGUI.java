@@ -171,7 +171,7 @@ public class ControllerGUI implements ActionListener{
 			//retrieving reply from service
 			AirConditioningService.AirCon_turnOnReply reply = blockingStub.airConTurnOn(request);
 
-			reply1.setText( String.valueOf( reply.getLength()) );
+			reply1.setText( String.valueOf(reply));
 		
 		}else if (label.equals("Invoke Heating Service")) {
 			System.out.println("Heating Service to be invoked ...");
