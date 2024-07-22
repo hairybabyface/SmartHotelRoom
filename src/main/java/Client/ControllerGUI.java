@@ -27,10 +27,9 @@ public class ControllerGUI implements ActionListener{
 	private JTextField entry1, reply1;
 	private JTextField entry2, reply2;
 	private JTextField entry3, reply3;
-	private JTextField entry4, reply4;
 
 
-	private JPanel getService1JPanel() {
+	private JPanel getAirConServiceJPanel() {
 
 		JPanel panel = new JPanel();
 
@@ -43,7 +42,7 @@ public class ControllerGUI implements ActionListener{
 		panel.add(entry1);
 		panel.add(Box.createRigidArea(new Dimension(10, 0)));
 
-		JButton button = new JButton("Invoke Service 1");
+		JButton button = new JButton("Invoke Air Conditioning Service");
 		button.addActionListener(this);
 		panel.add(button);
 		panel.add(Box.createRigidArea(new Dimension(10, 0)));
@@ -58,7 +57,7 @@ public class ControllerGUI implements ActionListener{
 
 	}
 
-	private JPanel getService2JPanel() {
+	private JPanel getHeatingServiceJPanel() {
 
 		JPanel panel = new JPanel();
 
@@ -71,7 +70,7 @@ public class ControllerGUI implements ActionListener{
 		panel.add(entry2);
 		panel.add(Box.createRigidArea(new Dimension(10, 0)));
 
-		JButton button = new JButton("Invoke Service 2");
+		JButton button = new JButton("Invoke Heating Service");
 		button.addActionListener(this);
 		panel.add(button);
 		panel.add(Box.createRigidArea(new Dimension(10, 0)));
@@ -86,7 +85,7 @@ public class ControllerGUI implements ActionListener{
 
 	}
 
-	private JPanel getService3JPanel() {
+	private JPanel getPowerServiceJPanel() {
 
 		JPanel panel = new JPanel();
 
@@ -99,7 +98,7 @@ public class ControllerGUI implements ActionListener{
 		panel.add(entry3);
 		panel.add(Box.createRigidArea(new Dimension(10, 0)));
 
-		JButton button = new JButton("Invoke Service 3");
+		JButton button = new JButton("Invoke Power Service");
 		button.addActionListener(this);
 		panel.add(button);
 		panel.add(Box.createRigidArea(new Dimension(10, 0)));
@@ -114,33 +113,6 @@ public class ControllerGUI implements ActionListener{
 
 	}
 
-	private JPanel getService4JPanel() {
-
-		JPanel panel = new JPanel();
-
-		BoxLayout boxlayout = new BoxLayout(panel, BoxLayout.X_AXIS);
-
-		JLabel label = new JLabel("Enter value")	;
-		panel.add(label);
-		panel.add(Box.createRigidArea(new Dimension(10, 0)));
-		entry4 = new JTextField("",10);
-		panel.add(entry4);
-		panel.add(Box.createRigidArea(new Dimension(10, 0)));
-
-		JButton button = new JButton("Invoke Service 4");
-		button.addActionListener(this);
-		panel.add(button);
-		panel.add(Box.createRigidArea(new Dimension(10, 0)));
-
-		reply4 = new JTextField("", 10);
-		reply4 .setEditable(false);
-		panel.add(reply4 );
-
-		panel.setLayout(boxlayout);
-
-		return panel;
-
-	}
 	public static void main(String[] args) {
 
 		ControllerGUI gui = new ControllerGUI();
@@ -150,7 +122,7 @@ public class ControllerGUI implements ActionListener{
 
 	private void build() { 
 
-		JFrame frame = new JFrame("Service Controller Sample");
+		JFrame frame = new JFrame("Smart Hotel Room Controller");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		// Set the panel to add buttons
@@ -164,10 +136,9 @@ public class ControllerGUI implements ActionListener{
 		// Set border for the panel
 		panel.setBorder(new EmptyBorder(new Insets(50, 100, 50, 100)));
 	
-		panel.add( getService1JPanel() );
-		panel.add( getService2JPanel() );
-		panel.add( getService3JPanel() );
-		panel.add( getService4JPanel() );
+		panel.add( getAirConServiceJPanel() );
+		panel.add( getHeatingServiceJPanel() );
+		panel.add( getPowerServiceJPanel() );
 
 		// Set size for the frame
 		frame.setSize(300, 300);
@@ -184,8 +155,8 @@ public class ControllerGUI implements ActionListener{
 		JButton button = (JButton)e.getSource();
 		String label = button.getActionCommand();  
 
-		if (label.equals("Invoke Service 1")) {
-			System.out.println("service 1 to be invoked ...");
+		if (label.equals("Invoke Air Conditioning Service")) {
+			System.out.println("Air Conditioning Service to be invoked ...");
 
 		
 			/*
@@ -202,8 +173,8 @@ public class ControllerGUI implements ActionListener{
 
 			reply1.setText( String.valueOf( reply.getLength()) );
 		
-		}else if (label.equals("Invoke Service 2")) {
-			System.out.println("service 2 to be invoked ...");
+		}else if (label.equals("Invoke Heating Service")) {
+			System.out.println("Heating Service to be invoked ...");
 
 		
 			/*
@@ -220,8 +191,8 @@ public class ControllerGUI implements ActionListener{
 
 			reply2.setText( String.valueOf( reply.getLength()) );
 			
-		}else if (label.equals("Invoke Service 3")) {
-			System.out.println("service 3 to be invoked ...");
+		}else if (label.equals("Invoke Power Service")) {
+			System.out.println("Power Service to be invoked ...");
 
 		
 			/*
