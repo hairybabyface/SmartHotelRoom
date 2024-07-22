@@ -54,21 +54,21 @@ public final class SmartHotelRoomImpl {
   static {
     java.lang.String[] descriptorData = {
       "\n\023AirConService.proto\022\rAirConService\"$\n\024" +
-      "AirCon_turnOnRequest\022\014\n\004text\030\001 \001(\t\"$\n\022Ai" +
-      "rCon_turnOnReply\022\016\n\006length\030\001 \001(\005\"$\n\024AirC" +
-      "on_turnUpRequest\022\014\n\004text\030\001 \001(\t\"$\n\022AirCon" +
-      "_turnUpReply\022\016\n\006length\030\001 \001(\005\"&\n\026AirCon_t" +
-      "urnDownRequest\022\014\n\004text\030\001 \001(\t\"&\n\024AirCon_t" +
-      "urnDownReply\022\016\n\006length\030\001 \001(\0052\246\002\n\rAirConS" +
-      "ervice\022Y\n\rAirCon_turnOn\022#.AirConService." +
-      "AirCon_turnOnRequest\032!.AirConService.Air" +
-      "Con_turnOnReply\"\000\022Y\n\rAirCon_turnUp\022#.Air" +
-      "ConService.AirCon_turnUpRequest\032!.AirCon" +
-      "Service.AirCon_turnUpReply\"\000\022_\n\017AirCon_t" +
-      "urnDown\022%.AirConService.AirCon_turnDownR" +
-      "equest\032#.AirConService.AirCon_turnDownRe" +
-      "ply\"\000B.\n\026AirConditioningServiceB\022SmartHo" +
-      "telRoomImplP\001b\006proto3"
+      "AirCon_turnOnRequest\022\014\n\004text\030\001 \001(\t\"\"\n\022Ai" +
+      "rCon_turnOnReply\022\014\n\004text\030\001 \001(\t\"$\n\024AirCon" +
+      "_turnUpRequest\022\014\n\004text\030\001 \001(\t\"$\n\022AirCon_t" +
+      "urnUpReply\022\016\n\006length\030\001 \001(\005\"&\n\026AirCon_tur" +
+      "nDownRequest\022\014\n\004text\030\001 \001(\t\"&\n\024AirCon_tur" +
+      "nDownReply\022\016\n\006length\030\001 \001(\0052\246\002\n\rAirConSer" +
+      "vice\022Y\n\rAirCon_turnOn\022#.AirConService.Ai" +
+      "rCon_turnOnRequest\032!.AirConService.AirCo" +
+      "n_turnOnReply\"\000\022Y\n\rAirCon_turnUp\022#.AirCo" +
+      "nService.AirCon_turnUpRequest\032!.AirConSe" +
+      "rvice.AirCon_turnUpReply\"\000\022_\n\017AirCon_tur" +
+      "nDown\022%.AirConService.AirCon_turnDownReq" +
+      "uest\032#.AirConService.AirCon_turnDownRepl" +
+      "y\"\000B.\n\026AirConditioningServiceB\022SmartHote" +
+      "lRoomImplP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -93,7 +93,7 @@ public final class SmartHotelRoomImpl {
     internal_static_AirConService_AirCon_turnOnReply_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AirConService_AirCon_turnOnReply_descriptor,
-        new java.lang.String[] { "Length", });
+        new java.lang.String[] { "Text", });
     internal_static_AirConService_AirCon_turnUpRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_AirConService_AirCon_turnUpRequest_fieldAccessorTable = new

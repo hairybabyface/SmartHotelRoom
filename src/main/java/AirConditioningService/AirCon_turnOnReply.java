@@ -16,7 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private AirCon_turnOnReply() {
-    length_ = 0;
+    text_ = "";
   }
 
   @java.lang.Override
@@ -43,9 +43,10 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
-          case 8: {
+          case 10: {
+            java.lang.String s = input.readStringRequireUtf8();
 
-            length_ = input.readInt32();
+            text_ = s;
             break;
           }
           default: {
@@ -80,13 +81,38 @@ private static final long serialVersionUID = 0L;
             AirConditioningService.AirCon_turnOnReply.class, AirConditioningService.AirCon_turnOnReply.Builder.class);
   }
 
-  public static final int LENGTH_FIELD_NUMBER = 1;
-  private int length_;
+  public static final int TEXT_FIELD_NUMBER = 1;
+  private volatile java.lang.Object text_;
   /**
-   * <code>int32 length = 1;</code>
+   * <code>string text = 1;</code>
    */
-  public int getLength() {
-    return length_;
+  public java.lang.String getText() {
+    java.lang.Object ref = text_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      text_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string text = 1;</code>
+   */
+  public com.google.protobuf.ByteString
+      getTextBytes() {
+    java.lang.Object ref = text_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      text_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
   }
 
   private byte memoizedIsInitialized = -1;
@@ -103,8 +129,8 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (length_ != 0) {
-      output.writeInt32(1, length_);
+    if (!getTextBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, text_);
     }
     unknownFields.writeTo(output);
   }
@@ -115,9 +141,8 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (length_ != 0) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(1, length_);
+    if (!getTextBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, text_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -135,8 +160,8 @@ private static final long serialVersionUID = 0L;
     AirConditioningService.AirCon_turnOnReply other = (AirConditioningService.AirCon_turnOnReply) obj;
 
     boolean result = true;
-    result = result && (getLength()
-        == other.getLength());
+    result = result && getText()
+        .equals(other.getText());
     result = result && unknownFields.equals(other.unknownFields);
     return result;
   }
@@ -148,8 +173,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + LENGTH_FIELD_NUMBER;
-    hash = (53 * hash) + getLength();
+    hash = (37 * hash) + TEXT_FIELD_NUMBER;
+    hash = (53 * hash) + getText().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -283,7 +308,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      length_ = 0;
+      text_ = "";
 
       return this;
     }
@@ -311,7 +336,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public AirConditioningService.AirCon_turnOnReply buildPartial() {
       AirConditioningService.AirCon_turnOnReply result = new AirConditioningService.AirCon_turnOnReply(this);
-      result.length_ = length_;
+      result.text_ = text_;
       onBuilt();
       return result;
     }
@@ -360,8 +385,9 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(AirConditioningService.AirCon_turnOnReply other) {
       if (other == AirConditioningService.AirCon_turnOnReply.getDefaultInstance()) return this;
-      if (other.getLength() != 0) {
-        setLength(other.getLength());
+      if (!other.getText().isEmpty()) {
+        text_ = other.text_;
+        onChanged();
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -392,28 +418,71 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int length_ ;
+    private java.lang.Object text_ = "";
     /**
-     * <code>int32 length = 1;</code>
+     * <code>string text = 1;</code>
      */
-    public int getLength() {
-      return length_;
+    public java.lang.String getText() {
+      java.lang.Object ref = text_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        text_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
     }
     /**
-     * <code>int32 length = 1;</code>
+     * <code>string text = 1;</code>
      */
-    public Builder setLength(int value) {
-      
-      length_ = value;
+    public com.google.protobuf.ByteString
+        getTextBytes() {
+      java.lang.Object ref = text_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        text_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string text = 1;</code>
+     */
+    public Builder setText(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      text_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 length = 1;</code>
+     * <code>string text = 1;</code>
      */
-    public Builder clearLength() {
+    public Builder clearText() {
       
-      length_ = 0;
+      text_ = getDefaultInstance().getText();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string text = 1;</code>
+     */
+    public Builder setTextBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      text_ = value;
       onChanged();
       return this;
     }

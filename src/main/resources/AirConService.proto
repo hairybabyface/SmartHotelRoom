@@ -19,7 +19,7 @@ message AirCon_turnOnRequest {
 }
 
 message AirCon_turnOnReply {
-  int32 length = 1;
+  string text = 1;
 }
 
 message AirCon_turnUpRequest {

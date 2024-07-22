@@ -2,8 +2,6 @@ package AirConditioningService;
 
 import java.io.IOException;
 
-import com.google.protobuf.Descriptors.FieldDescriptor;
-
 import AirConditioningService.AirConServiceGrpc.AirConServiceImplBase;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
@@ -32,17 +30,15 @@ public class AirConService extends AirConServiceImplBase{
 	@Override
 	public void airConTurnOn(AirCon_turnOnRequest request, StreamObserver<AirCon_turnOnReply> responseObserver) 
 	{
-		System.out.println("receiving request to turn on Air Conditioning");
 		
 		//prepare the value to be set back
-		int length = request.getText().length();
+		//String r = request.getText();
 		
 		//preparing the response message
-		AirCon_turnOnReply reply = AirCon_turnOnReply.newBuilder().setLength(length).build();
-
-		responseObserver.onNext( reply ); 
-
-		responseObserver.onCompleted();
-
+		AirCon_turnOnReply reply = AirCon_turnOnReply.newBuilder().setText("Air con turned on").build();
+	     
+		responseObserver.onNext(reply);
+	     
+	    responseObserver.onCompleted();
 	}
 }
