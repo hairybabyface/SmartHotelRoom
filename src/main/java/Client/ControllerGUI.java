@@ -42,7 +42,7 @@ public class ControllerGUI implements ActionListener{
 		panel.add(entry1);
 		panel.add(Box.createRigidArea(new Dimension(10, 0)));
 
-		JButton button = new JButton("Invoke Air Conditioning Service");
+		JButton button = new JButton("Send Air Conditioning service request");
 		button.addActionListener(this);
 		panel.add(button);
 		panel.add(Box.createRigidArea(new Dimension(10, 0)));
@@ -162,26 +162,31 @@ public class ControllerGUI implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		JButton button = (JButton)e.getSource();
 		String label = button.getActionCommand();  
+		String e1 = entry1.getText();
 
-		if (label.equals("Invoke Air Conditioning Service")) {
-			System.out.println("Air Conditioning Service to be invoked ...");
+		if (label.equals("Send Air Conditioning service request")) 
+		{
+		   if(e1.equals("Turn on air con")) {
+				
+		      System.out.println("Air Conditioning Service to be invoked ...");
 
-		
-			/*
-			 * 
-			 */
-			ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50051).usePlaintext().build();
-			AirConServiceGrpc.AirConServiceBlockingStub blockingStub = AirConServiceGrpc.newBlockingStub(channel);
+			  ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50051).usePlaintext().build();
+			  AirConServiceGrpc.AirConServiceBlockingStub blockingStub = AirConServiceGrpc.newBlockingStub(channel);
 
-			//preparing message to send
-			AirConditioningService.AirCon_turnOnRequest request = AirConditioningService.AirCon_turnOnRequest.newBuilder().setText(entry1.getText()).build();
+			  //preparing message to send
+			  AirConditioningService.AirCon_turnOnRequest request = AirConditioningService.AirCon_turnOnRequest.newBuilder().setText(e1).build();
 
-			//retrieving reply from service
-			AirConditioningService.AirCon_turnOnReply reply = blockingStub.airConTurnOn(request);
+			  //retrieving reply from service
+			  AirConditioningService.AirCon_turnOnReply reply = blockingStub.airConTurnOn(request);
 
-			reply1.setText( String.valueOf(reply));
-		
-		}else if (label.equals("Invoke Heating Service")) {
+			  reply1.setText( String.valueOf(reply));
+			}	
+		    else
+		    {
+		      reply1.setText("ERROR: Invalid Request");
+		    }
+		}
+		else if (label.equals("Invoke Heating Service")) {
 			System.out.println("Heating Service to be invoked ...");
 
 		
