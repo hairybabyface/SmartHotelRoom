@@ -35,7 +35,7 @@ public class ControllerGUI implements ActionListener{
 
 		BoxLayout boxlayout = new BoxLayout(panel, BoxLayout.X_AXIS);
 
-		JLabel label = new JLabel("Enter value")	;
+		JLabel label = new JLabel("Enter Request: ");
 		panel.add(label);
 		panel.add(Box.createRigidArea(new Dimension(10, 0)));
 		entry1 = new JTextField("",10);
@@ -46,6 +46,9 @@ public class ControllerGUI implements ActionListener{
 		button.addActionListener(this);
 		panel.add(button);
 		panel.add(Box.createRigidArea(new Dimension(10, 0)));
+		
+		JLabel label2 = new JLabel("Service Response: ");
+		panel.add(label2);
 
 		reply1 = new JTextField("", 10);
 		reply1 .setEditable(false);
@@ -63,7 +66,7 @@ public class ControllerGUI implements ActionListener{
 
 		BoxLayout boxlayout = new BoxLayout(panel, BoxLayout.X_AXIS);
 
-		JLabel label = new JLabel("Enter value")	;
+		JLabel label = new JLabel("Enter Request: ");
 		panel.add(label);
 		panel.add(Box.createRigidArea(new Dimension(10, 0)));
 		entry2 = new JTextField("",10);
@@ -75,6 +78,9 @@ public class ControllerGUI implements ActionListener{
 		panel.add(button);
 		panel.add(Box.createRigidArea(new Dimension(10, 0)));
 
+		JLabel label2 = new JLabel("Service Response: ");
+		panel.add(label2);
+		
 		reply2 = new JTextField("", 10);
 		reply2 .setEditable(false);
 		panel.add(reply2 );
@@ -82,7 +88,6 @@ public class ControllerGUI implements ActionListener{
 		panel.setLayout(boxlayout);
 
 		return panel;
-
 	}
 
 	private JPanel getPowerServiceJPanel() {
@@ -91,7 +96,7 @@ public class ControllerGUI implements ActionListener{
 
 		BoxLayout boxlayout = new BoxLayout(panel, BoxLayout.X_AXIS);
 
-		JLabel label = new JLabel("Enter value")	;
+		JLabel label = new JLabel("Enter Request: ");
 		panel.add(label);
 		panel.add(Box.createRigidArea(new Dimension(10, 0)));
 		entry3 = new JTextField("",10);
@@ -102,6 +107,9 @@ public class ControllerGUI implements ActionListener{
 		button.addActionListener(this);
 		panel.add(button);
 		panel.add(Box.createRigidArea(new Dimension(10, 0)));
+		
+		JLabel label2 = new JLabel("Service Response: ");
+		panel.add(label2);
 
 		reply3 = new JTextField("", 10);
 		reply3 .setEditable(false);
