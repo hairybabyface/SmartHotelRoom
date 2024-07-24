@@ -56,19 +56,19 @@ public final class SmartHotelRoomImpl {
       "\n\023AirConService.proto\022\rAirConService\"$\n\024" +
       "AirCon_turnOnRequest\022\014\n\004text\030\001 \001(\t\"\"\n\022Ai" +
       "rCon_turnOnReply\022\014\n\004text\030\001 \001(\t\"$\n\024AirCon" +
-      "_turnUpRequest\022\014\n\004text\030\001 \001(\t\"$\n\022AirCon_t" +
-      "urnUpReply\022\016\n\006length\030\001 \001(\005\"&\n\026AirCon_tur" +
-      "nDownRequest\022\014\n\004text\030\001 \001(\t\"&\n\024AirCon_tur" +
-      "nDownReply\022\016\n\006length\030\001 \001(\0052\246\002\n\rAirConSer" +
-      "vice\022Y\n\rAirCon_turnOn\022#.AirConService.Ai" +
-      "rCon_turnOnRequest\032!.AirConService.AirCo" +
-      "n_turnOnReply\"\000\022Y\n\rAirCon_turnUp\022#.AirCo" +
-      "nService.AirCon_turnUpRequest\032!.AirConSe" +
-      "rvice.AirCon_turnUpReply\"\000\022_\n\017AirCon_tur" +
-      "nDown\022%.AirConService.AirCon_turnDownReq" +
-      "uest\032#.AirConService.AirCon_turnDownRepl" +
-      "y\"\000B.\n\026AirConditioningServiceB\022SmartHote" +
-      "lRoomImplP\001b\006proto3"
+      "_turnUpRequest\022\014\n\004text\030\001 \001(\t\"\"\n\022AirCon_t" +
+      "urnUpReply\022\014\n\004text\030\001 \001(\t\"&\n\026AirCon_turnD" +
+      "ownRequest\022\014\n\004text\030\001 \001(\t\"$\n\024AirCon_turnD" +
+      "ownReply\022\014\n\004text\030\001 \001(\t2\246\002\n\rAirConService" +
+      "\022Y\n\rAirCon_turnOn\022#.AirConService.AirCon" +
+      "_turnOnRequest\032!.AirConService.AirCon_tu" +
+      "rnOnReply\"\000\022Y\n\rAirCon_turnUp\022#.AirConSer" +
+      "vice.AirCon_turnUpRequest\032!.AirConServic" +
+      "e.AirCon_turnUpReply\"\000\022_\n\017AirCon_turnDow" +
+      "n\022%.AirConService.AirCon_turnDownRequest" +
+      "\032#.AirConService.AirCon_turnDownReply\"\000B" +
+      ".\n\026AirConditioningServiceB\022SmartHotelRoo" +
+      "mImplP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -105,7 +105,7 @@ public final class SmartHotelRoomImpl {
     internal_static_AirConService_AirCon_turnUpReply_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AirConService_AirCon_turnUpReply_descriptor,
-        new java.lang.String[] { "Length", });
+        new java.lang.String[] { "Text", });
     internal_static_AirConService_AirCon_turnDownRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_AirConService_AirCon_turnDownRequest_fieldAccessorTable = new
@@ -117,7 +117,7 @@ public final class SmartHotelRoomImpl {
     internal_static_AirConService_AirCon_turnDownReply_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AirConService_AirCon_turnDownReply_descriptor,
-        new java.lang.String[] { "Length", });
+        new java.lang.String[] { "Text", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

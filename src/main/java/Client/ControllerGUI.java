@@ -166,10 +166,8 @@ public class ControllerGUI implements ActionListener{
 
 		if (label.equals("Send Air Conditioning service request")) 
 		{
-		   if(e1.equals("Turn on air con")) {
-				
-		      System.out.println("Air Conditioning Service to be invoked ...");
-
+		   if(e1.equals("Turn on air con"))
+		   {
 			  ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50051).usePlaintext().build();
 			  AirConServiceGrpc.AirConServiceBlockingStub blockingStub = AirConServiceGrpc.newBlockingStub(channel);
 
@@ -180,6 +178,34 @@ public class ControllerGUI implements ActionListener{
 			  AirConditioningService.AirCon_turnOnReply reply = blockingStub.airConTurnOn(request);
 
 			  reply1.setText( String.valueOf(reply));
+			}	
+		    else if(e1.equals("Turn up air con")) 
+		    {
+
+			   ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50051).usePlaintext().build();
+			   AirConServiceGrpc.AirConServiceBlockingStub blockingStub = AirConServiceGrpc.newBlockingStub(channel);
+
+			   //preparing message to send
+			   AirConditioningService.AirCon_turnUpRequest request = AirConditioningService.AirCon_turnUpRequest.newBuilder().setText(e1).build();
+
+			   //retrieving reply from service
+			   AirConditioningService.AirCon_turnUpReply reply = blockingStub.airConTurnUp(request);
+
+			   reply1.setText( String.valueOf(reply));
+			}	
+		    else if(e1.equals("Turn down air con")) 
+		    {
+
+			   ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50051).usePlaintext().build();
+			   AirConServiceGrpc.AirConServiceBlockingStub blockingStub = AirConServiceGrpc.newBlockingStub(channel);
+
+			   //preparing message to send
+			   AirConditioningService.AirCon_turnDownRequest request = AirConditioningService.AirCon_turnDownRequest.newBuilder().setText(e1).build();
+
+			   //retrieving reply from service
+			   AirConditioningService.AirCon_turnDownReply reply = blockingStub.airConTurnDown(request);
+
+			   reply1.setText( String.valueOf(reply));
 			}	
 		    else
 		    {
