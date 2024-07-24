@@ -8,7 +8,12 @@ public interface Heating_turnDownReplyOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>int32 length = 1;</code>
+   * <code>string text = 1;</code>
    */
-  int getLength();
+  java.lang.String getText();
+  /**
+   * <code>string text = 1;</code>
+   */
+  com.google.protobuf.ByteString
+      getTextBytes();
 }

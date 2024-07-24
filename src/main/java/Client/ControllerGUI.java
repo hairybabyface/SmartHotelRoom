@@ -228,7 +228,7 @@ public class ControllerGUI implements ActionListener{
 			//retrieving reply from service
 			HeatingService.Heating_turnOnReply reply = blockingStub.heatingTurnOn(request);
 
-			reply2.setText( String.valueOf( reply.getLength()) );
+			reply2.setText( String.valueOf(reply));
 			
 		}else if (label.equals("Invoke Power Service")) {
 			System.out.println("Power Service to be invoked ...");

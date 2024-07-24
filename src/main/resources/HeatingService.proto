@@ -19,7 +19,7 @@ message Heating_turnOnRequest {
 }
 
 message Heating_turnOnReply {
-  int32 length = 1;
+  string text = 1;
 }
 
 message Heating_turnUpRequest {
@@ -27,7 +27,7 @@ message Heating_turnUpRequest {
 }
 
 message Heating_turnUpReply {
-  int32 length = 1;
+  string text = 1;
 }
 
 message Heating_turnDownRequest {
@@ -35,5 +35,5 @@ message Heating_turnDownRequest {
 }
 
 message Heating_turnDownReply {
-  int32 length = 1;
+  string text = 1;
 }

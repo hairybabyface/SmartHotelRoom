@@ -54,21 +54,21 @@ public final class SmartHotelRoomImpl {
   static {
     java.lang.String[] descriptorData = {
       "\n\024HeatingService.proto\022\016HeatingService\"%" +
-      "\n\025Heating_turnOnRequest\022\014\n\004text\030\001 \001(\t\"%\n" +
-      "\023Heating_turnOnReply\022\016\n\006length\030\001 \001(\005\"%\n\025" +
-      "Heating_turnUpRequest\022\014\n\004text\030\001 \001(\t\"%\n\023H" +
-      "eating_turnUpReply\022\016\n\006length\030\001 \001(\005\"\'\n\027He" +
-      "ating_turnDownRequest\022\014\n\004text\030\001 \001(\t\"\'\n\025H" +
-      "eating_turnDownReply\022\016\n\006length\030\001 \001(\0052\266\002\n" +
-      "\016HeatingService\022^\n\016Heating_turnOn\022%.Heat" +
-      "ingService.Heating_turnOnRequest\032#.Heati" +
-      "ngService.Heating_turnOnReply\"\000\022^\n\016Heati" +
-      "ng_turnUp\022%.HeatingService.Heating_turnU" +
-      "pRequest\032#.HeatingService.Heating_turnUp" +
-      "Reply\"\000\022d\n\020Heating_turnDown\022\'.HeatingSer" +
-      "vice.Heating_turnDownRequest\032%.HeatingSe" +
-      "rvice.Heating_turnDownReply\"\000B&\n\016Heating" +
-      "ServiceB\022SmartHotelRoomImplP\001b\006proto3"
+      "\n\025Heating_turnOnRequest\022\014\n\004text\030\001 \001(\t\"#\n" +
+      "\023Heating_turnOnReply\022\014\n\004text\030\001 \001(\t\"%\n\025He" +
+      "ating_turnUpRequest\022\014\n\004text\030\001 \001(\t\"#\n\023Hea" +
+      "ting_turnUpReply\022\014\n\004text\030\001 \001(\t\"\'\n\027Heatin" +
+      "g_turnDownRequest\022\014\n\004text\030\001 \001(\t\"%\n\025Heati" +
+      "ng_turnDownReply\022\014\n\004text\030\001 \001(\t2\266\002\n\016Heati" +
+      "ngService\022^\n\016Heating_turnOn\022%.HeatingSer" +
+      "vice.Heating_turnOnRequest\032#.HeatingServ" +
+      "ice.Heating_turnOnReply\"\000\022^\n\016Heating_tur" +
+      "nUp\022%.HeatingService.Heating_turnUpReque" +
+      "st\032#.HeatingService.Heating_turnUpReply\"" +
+      "\000\022d\n\020Heating_turnDown\022\'.HeatingService.H" +
+      "eating_turnDownRequest\032%.HeatingService." +
+      "Heating_turnDownReply\"\000B&\n\016HeatingServic" +
+      "eB\022SmartHotelRoomImplP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -93,7 +93,7 @@ public final class SmartHotelRoomImpl {
     internal_static_HeatingService_Heating_turnOnReply_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HeatingService_Heating_turnOnReply_descriptor,
-        new java.lang.String[] { "Length", });
+        new java.lang.String[] { "Text", });
     internal_static_HeatingService_Heating_turnUpRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_HeatingService_Heating_turnUpRequest_fieldAccessorTable = new
@@ -105,7 +105,7 @@ public final class SmartHotelRoomImpl {
     internal_static_HeatingService_Heating_turnUpReply_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HeatingService_Heating_turnUpReply_descriptor,
-        new java.lang.String[] { "Length", });
+        new java.lang.String[] { "Text", });
     internal_static_HeatingService_Heating_turnDownRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_HeatingService_Heating_turnDownRequest_fieldAccessorTable = new
@@ -117,7 +117,7 @@ public final class SmartHotelRoomImpl {
     internal_static_HeatingService_Heating_turnDownReply_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HeatingService_Heating_turnDownReply_descriptor,
-        new java.lang.String[] { "Length", });
+        new java.lang.String[] { "Text", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
