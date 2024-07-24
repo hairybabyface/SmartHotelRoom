@@ -70,13 +70,13 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return HeatingService.SmartHotelRoomImpl.internal_static_HeatingService_Heating_turnUpReply_descriptor;
+    return HeatingService.HeatingServiceImpl.internal_static_HeatingService_Heating_turnUpReply_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return HeatingService.SmartHotelRoomImpl.internal_static_HeatingService_Heating_turnUpReply_fieldAccessorTable
+    return HeatingService.HeatingServiceImpl.internal_static_HeatingService_Heating_turnUpReply_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             HeatingService.Heating_turnUpReply.class, HeatingService.Heating_turnUpReply.Builder.class);
   }
@@ -279,13 +279,13 @@ private static final long serialVersionUID = 0L;
       HeatingService.Heating_turnUpReplyOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return HeatingService.SmartHotelRoomImpl.internal_static_HeatingService_Heating_turnUpReply_descriptor;
+      return HeatingService.HeatingServiceImpl.internal_static_HeatingService_Heating_turnUpReply_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return HeatingService.SmartHotelRoomImpl.internal_static_HeatingService_Heating_turnUpReply_fieldAccessorTable
+      return HeatingService.HeatingServiceImpl.internal_static_HeatingService_Heating_turnUpReply_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               HeatingService.Heating_turnUpReply.class, HeatingService.Heating_turnUpReply.Builder.class);
     }
@@ -316,7 +316,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return HeatingService.SmartHotelRoomImpl.internal_static_HeatingService_Heating_turnUpReply_descriptor;
+      return HeatingService.HeatingServiceImpl.internal_static_HeatingService_Heating_turnUpReply_descriptor;
     }
 
     @java.lang.Override

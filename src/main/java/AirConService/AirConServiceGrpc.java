@@ -1,4 +1,4 @@
-package AirConditioningService;
+package AirConService;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
@@ -30,30 +30,30 @@ public final class AirConServiceGrpc {
   public static final String SERVICE_NAME = "AirConService.AirConService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<AirConditioningService.AirCon_turnOnRequest,
-      AirConditioningService.AirCon_turnOnReply> getAirConTurnOnMethod;
+  private static volatile io.grpc.MethodDescriptor<AirConService.AirCon_turnOnRequest,
+      AirConService.AirCon_turnOnReply> getAirConTurnOnMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "AirCon_turnOn",
-      requestType = AirConditioningService.AirCon_turnOnRequest.class,
-      responseType = AirConditioningService.AirCon_turnOnReply.class,
+      requestType = AirConService.AirCon_turnOnRequest.class,
+      responseType = AirConService.AirCon_turnOnReply.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<AirConditioningService.AirCon_turnOnRequest,
-      AirConditioningService.AirCon_turnOnReply> getAirConTurnOnMethod() {
-    io.grpc.MethodDescriptor<AirConditioningService.AirCon_turnOnRequest, AirConditioningService.AirCon_turnOnReply> getAirConTurnOnMethod;
+  public static io.grpc.MethodDescriptor<AirConService.AirCon_turnOnRequest,
+      AirConService.AirCon_turnOnReply> getAirConTurnOnMethod() {
+    io.grpc.MethodDescriptor<AirConService.AirCon_turnOnRequest, AirConService.AirCon_turnOnReply> getAirConTurnOnMethod;
     if ((getAirConTurnOnMethod = AirConServiceGrpc.getAirConTurnOnMethod) == null) {
       synchronized (AirConServiceGrpc.class) {
         if ((getAirConTurnOnMethod = AirConServiceGrpc.getAirConTurnOnMethod) == null) {
           AirConServiceGrpc.getAirConTurnOnMethod = getAirConTurnOnMethod = 
-              io.grpc.MethodDescriptor.<AirConditioningService.AirCon_turnOnRequest, AirConditioningService.AirCon_turnOnReply>newBuilder()
+              io.grpc.MethodDescriptor.<AirConService.AirCon_turnOnRequest, AirConService.AirCon_turnOnReply>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "AirConService.AirConService", "AirCon_turnOn"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  AirConditioningService.AirCon_turnOnRequest.getDefaultInstance()))
+                  AirConService.AirCon_turnOnRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  AirConditioningService.AirCon_turnOnReply.getDefaultInstance()))
+                  AirConService.AirCon_turnOnReply.getDefaultInstance()))
                   .setSchemaDescriptor(new AirConServiceMethodDescriptorSupplier("AirCon_turnOn"))
                   .build();
           }
@@ -62,30 +62,30 @@ public final class AirConServiceGrpc {
      return getAirConTurnOnMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<AirConditioningService.AirCon_turnUpRequest,
-      AirConditioningService.AirCon_turnUpReply> getAirConTurnUpMethod;
+  private static volatile io.grpc.MethodDescriptor<AirConService.AirCon_turnUpRequest,
+      AirConService.AirCon_turnUpReply> getAirConTurnUpMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "AirCon_turnUp",
-      requestType = AirConditioningService.AirCon_turnUpRequest.class,
-      responseType = AirConditioningService.AirCon_turnUpReply.class,
+      requestType = AirConService.AirCon_turnUpRequest.class,
+      responseType = AirConService.AirCon_turnUpReply.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<AirConditioningService.AirCon_turnUpRequest,
-      AirConditioningService.AirCon_turnUpReply> getAirConTurnUpMethod() {
-    io.grpc.MethodDescriptor<AirConditioningService.AirCon_turnUpRequest, AirConditioningService.AirCon_turnUpReply> getAirConTurnUpMethod;
+  public static io.grpc.MethodDescriptor<AirConService.AirCon_turnUpRequest,
+      AirConService.AirCon_turnUpReply> getAirConTurnUpMethod() {
+    io.grpc.MethodDescriptor<AirConService.AirCon_turnUpRequest, AirConService.AirCon_turnUpReply> getAirConTurnUpMethod;
     if ((getAirConTurnUpMethod = AirConServiceGrpc.getAirConTurnUpMethod) == null) {
       synchronized (AirConServiceGrpc.class) {
         if ((getAirConTurnUpMethod = AirConServiceGrpc.getAirConTurnUpMethod) == null) {
           AirConServiceGrpc.getAirConTurnUpMethod = getAirConTurnUpMethod = 
-              io.grpc.MethodDescriptor.<AirConditioningService.AirCon_turnUpRequest, AirConditioningService.AirCon_turnUpReply>newBuilder()
+              io.grpc.MethodDescriptor.<AirConService.AirCon_turnUpRequest, AirConService.AirCon_turnUpReply>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "AirConService.AirConService", "AirCon_turnUp"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  AirConditioningService.AirCon_turnUpRequest.getDefaultInstance()))
+                  AirConService.AirCon_turnUpRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  AirConditioningService.AirCon_turnUpReply.getDefaultInstance()))
+                  AirConService.AirCon_turnUpReply.getDefaultInstance()))
                   .setSchemaDescriptor(new AirConServiceMethodDescriptorSupplier("AirCon_turnUp"))
                   .build();
           }
@@ -94,30 +94,30 @@ public final class AirConServiceGrpc {
      return getAirConTurnUpMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<AirConditioningService.AirCon_turnDownRequest,
-      AirConditioningService.AirCon_turnDownReply> getAirConTurnDownMethod;
+  private static volatile io.grpc.MethodDescriptor<AirConService.AirCon_turnDownRequest,
+      AirConService.AirCon_turnDownReply> getAirConTurnDownMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "AirCon_turnDown",
-      requestType = AirConditioningService.AirCon_turnDownRequest.class,
-      responseType = AirConditioningService.AirCon_turnDownReply.class,
+      requestType = AirConService.AirCon_turnDownRequest.class,
+      responseType = AirConService.AirCon_turnDownReply.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<AirConditioningService.AirCon_turnDownRequest,
-      AirConditioningService.AirCon_turnDownReply> getAirConTurnDownMethod() {
-    io.grpc.MethodDescriptor<AirConditioningService.AirCon_turnDownRequest, AirConditioningService.AirCon_turnDownReply> getAirConTurnDownMethod;
+  public static io.grpc.MethodDescriptor<AirConService.AirCon_turnDownRequest,
+      AirConService.AirCon_turnDownReply> getAirConTurnDownMethod() {
+    io.grpc.MethodDescriptor<AirConService.AirCon_turnDownRequest, AirConService.AirCon_turnDownReply> getAirConTurnDownMethod;
     if ((getAirConTurnDownMethod = AirConServiceGrpc.getAirConTurnDownMethod) == null) {
       synchronized (AirConServiceGrpc.class) {
         if ((getAirConTurnDownMethod = AirConServiceGrpc.getAirConTurnDownMethod) == null) {
           AirConServiceGrpc.getAirConTurnDownMethod = getAirConTurnDownMethod = 
-              io.grpc.MethodDescriptor.<AirConditioningService.AirCon_turnDownRequest, AirConditioningService.AirCon_turnDownReply>newBuilder()
+              io.grpc.MethodDescriptor.<AirConService.AirCon_turnDownRequest, AirConService.AirCon_turnDownReply>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "AirConService.AirConService", "AirCon_turnDown"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  AirConditioningService.AirCon_turnDownRequest.getDefaultInstance()))
+                  AirConService.AirCon_turnDownRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  AirConditioningService.AirCon_turnDownReply.getDefaultInstance()))
+                  AirConService.AirCon_turnDownReply.getDefaultInstance()))
                   .setSchemaDescriptor(new AirConServiceMethodDescriptorSupplier("AirCon_turnDown"))
                   .build();
           }
@@ -158,22 +158,22 @@ public final class AirConServiceGrpc {
 
     /**
      */
-    public void airConTurnOn(AirConditioningService.AirCon_turnOnRequest request,
-        io.grpc.stub.StreamObserver<AirConditioningService.AirCon_turnOnReply> responseObserver) {
+    public void airConTurnOn(AirConService.AirCon_turnOnRequest request,
+        io.grpc.stub.StreamObserver<AirConService.AirCon_turnOnReply> responseObserver) {
       asyncUnimplementedUnaryCall(getAirConTurnOnMethod(), responseObserver);
     }
 
     /**
      */
-    public void airConTurnUp(AirConditioningService.AirCon_turnUpRequest request,
-        io.grpc.stub.StreamObserver<AirConditioningService.AirCon_turnUpReply> responseObserver) {
+    public void airConTurnUp(AirConService.AirCon_turnUpRequest request,
+        io.grpc.stub.StreamObserver<AirConService.AirCon_turnUpReply> responseObserver) {
       asyncUnimplementedUnaryCall(getAirConTurnUpMethod(), responseObserver);
     }
 
     /**
      */
-    public void airConTurnDown(AirConditioningService.AirCon_turnDownRequest request,
-        io.grpc.stub.StreamObserver<AirConditioningService.AirCon_turnDownReply> responseObserver) {
+    public void airConTurnDown(AirConService.AirCon_turnDownRequest request,
+        io.grpc.stub.StreamObserver<AirConService.AirCon_turnDownReply> responseObserver) {
       asyncUnimplementedUnaryCall(getAirConTurnDownMethod(), responseObserver);
     }
 
@@ -183,22 +183,22 @@ public final class AirConServiceGrpc {
             getAirConTurnOnMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                AirConditioningService.AirCon_turnOnRequest,
-                AirConditioningService.AirCon_turnOnReply>(
+                AirConService.AirCon_turnOnRequest,
+                AirConService.AirCon_turnOnReply>(
                   this, METHODID_AIR_CON_TURN_ON)))
           .addMethod(
             getAirConTurnUpMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                AirConditioningService.AirCon_turnUpRequest,
-                AirConditioningService.AirCon_turnUpReply>(
+                AirConService.AirCon_turnUpRequest,
+                AirConService.AirCon_turnUpReply>(
                   this, METHODID_AIR_CON_TURN_UP)))
           .addMethod(
             getAirConTurnDownMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                AirConditioningService.AirCon_turnDownRequest,
-                AirConditioningService.AirCon_turnDownReply>(
+                AirConService.AirCon_turnDownRequest,
+                AirConService.AirCon_turnDownReply>(
                   this, METHODID_AIR_CON_TURN_DOWN)))
           .build();
     }
@@ -227,24 +227,24 @@ public final class AirConServiceGrpc {
 
     /**
      */
-    public void airConTurnOn(AirConditioningService.AirCon_turnOnRequest request,
-        io.grpc.stub.StreamObserver<AirConditioningService.AirCon_turnOnReply> responseObserver) {
+    public void airConTurnOn(AirConService.AirCon_turnOnRequest request,
+        io.grpc.stub.StreamObserver<AirConService.AirCon_turnOnReply> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getAirConTurnOnMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void airConTurnUp(AirConditioningService.AirCon_turnUpRequest request,
-        io.grpc.stub.StreamObserver<AirConditioningService.AirCon_turnUpReply> responseObserver) {
+    public void airConTurnUp(AirConService.AirCon_turnUpRequest request,
+        io.grpc.stub.StreamObserver<AirConService.AirCon_turnUpReply> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getAirConTurnUpMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void airConTurnDown(AirConditioningService.AirCon_turnDownRequest request,
-        io.grpc.stub.StreamObserver<AirConditioningService.AirCon_turnDownReply> responseObserver) {
+    public void airConTurnDown(AirConService.AirCon_turnDownRequest request,
+        io.grpc.stub.StreamObserver<AirConService.AirCon_turnDownReply> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getAirConTurnDownMethod(), getCallOptions()), request, responseObserver);
     }
@@ -273,21 +273,21 @@ public final class AirConServiceGrpc {
 
     /**
      */
-    public AirConditioningService.AirCon_turnOnReply airConTurnOn(AirConditioningService.AirCon_turnOnRequest request) {
+    public AirConService.AirCon_turnOnReply airConTurnOn(AirConService.AirCon_turnOnRequest request) {
       return blockingUnaryCall(
           getChannel(), getAirConTurnOnMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public AirConditioningService.AirCon_turnUpReply airConTurnUp(AirConditioningService.AirCon_turnUpRequest request) {
+    public AirConService.AirCon_turnUpReply airConTurnUp(AirConService.AirCon_turnUpRequest request) {
       return blockingUnaryCall(
           getChannel(), getAirConTurnUpMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public AirConditioningService.AirCon_turnDownReply airConTurnDown(AirConditioningService.AirCon_turnDownRequest request) {
+    public AirConService.AirCon_turnDownReply airConTurnDown(AirConService.AirCon_turnDownRequest request) {
       return blockingUnaryCall(
           getChannel(), getAirConTurnDownMethod(), getCallOptions(), request);
     }
@@ -316,24 +316,24 @@ public final class AirConServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<AirConditioningService.AirCon_turnOnReply> airConTurnOn(
-        AirConditioningService.AirCon_turnOnRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<AirConService.AirCon_turnOnReply> airConTurnOn(
+        AirConService.AirCon_turnOnRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getAirConTurnOnMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<AirConditioningService.AirCon_turnUpReply> airConTurnUp(
-        AirConditioningService.AirCon_turnUpRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<AirConService.AirCon_turnUpReply> airConTurnUp(
+        AirConService.AirCon_turnUpRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getAirConTurnUpMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<AirConditioningService.AirCon_turnDownReply> airConTurnDown(
-        AirConditioningService.AirCon_turnDownRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<AirConService.AirCon_turnDownReply> airConTurnDown(
+        AirConService.AirCon_turnDownRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getAirConTurnDownMethod(), getCallOptions()), request);
     }
@@ -361,16 +361,16 @@ public final class AirConServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_AIR_CON_TURN_ON:
-          serviceImpl.airConTurnOn((AirConditioningService.AirCon_turnOnRequest) request,
-              (io.grpc.stub.StreamObserver<AirConditioningService.AirCon_turnOnReply>) responseObserver);
+          serviceImpl.airConTurnOn((AirConService.AirCon_turnOnRequest) request,
+              (io.grpc.stub.StreamObserver<AirConService.AirCon_turnOnReply>) responseObserver);
           break;
         case METHODID_AIR_CON_TURN_UP:
-          serviceImpl.airConTurnUp((AirConditioningService.AirCon_turnUpRequest) request,
-              (io.grpc.stub.StreamObserver<AirConditioningService.AirCon_turnUpReply>) responseObserver);
+          serviceImpl.airConTurnUp((AirConService.AirCon_turnUpRequest) request,
+              (io.grpc.stub.StreamObserver<AirConService.AirCon_turnUpReply>) responseObserver);
           break;
         case METHODID_AIR_CON_TURN_DOWN:
-          serviceImpl.airConTurnDown((AirConditioningService.AirCon_turnDownRequest) request,
-              (io.grpc.stub.StreamObserver<AirConditioningService.AirCon_turnDownReply>) responseObserver);
+          serviceImpl.airConTurnDown((AirConService.AirCon_turnDownRequest) request,
+              (io.grpc.stub.StreamObserver<AirConService.AirCon_turnDownReply>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -394,7 +394,7 @@ public final class AirConServiceGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return AirConditioningService.SmartHotelRoomImpl.getDescriptor();
+      return AirConService.AirConServiceImpl.getDescriptor();
     }
 
     @java.lang.Override

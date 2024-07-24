@@ -70,13 +70,13 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return PowerService.SmartHotelRoomImpl.internal_static_PowerService_Power_turnOffRequest_descriptor;
+    return PowerService.PowerServiceImpl.internal_static_PowerService_Power_turnOffRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return PowerService.SmartHotelRoomImpl.internal_static_PowerService_Power_turnOffRequest_fieldAccessorTable
+    return PowerService.PowerServiceImpl.internal_static_PowerService_Power_turnOffRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             PowerService.Power_turnOffRequest.class, PowerService.Power_turnOffRequest.Builder.class);
   }
@@ -279,13 +279,13 @@ private static final long serialVersionUID = 0L;
       PowerService.Power_turnOffRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return PowerService.SmartHotelRoomImpl.internal_static_PowerService_Power_turnOffRequest_descriptor;
+      return PowerService.PowerServiceImpl.internal_static_PowerService_Power_turnOffRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return PowerService.SmartHotelRoomImpl.internal_static_PowerService_Power_turnOffRequest_fieldAccessorTable
+      return PowerService.PowerServiceImpl.internal_static_PowerService_Power_turnOffRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               PowerService.Power_turnOffRequest.class, PowerService.Power_turnOffRequest.Builder.class);
     }
@@ -316,7 +316,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return PowerService.SmartHotelRoomImpl.internal_static_PowerService_Power_turnOffRequest_descriptor;
+      return PowerService.PowerServiceImpl.internal_static_PowerService_Power_turnOffRequest_descriptor;
     }
 
     @java.lang.Override

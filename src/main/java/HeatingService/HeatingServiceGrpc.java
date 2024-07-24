@@ -394,7 +394,7 @@ public final class HeatingServiceGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return HeatingService.SmartHotelRoomImpl.getDescriptor();
+      return HeatingService.HeatingServiceImpl.getDescriptor();
     }
 
     @java.lang.Override

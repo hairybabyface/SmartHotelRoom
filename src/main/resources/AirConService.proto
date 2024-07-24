@@ -1,8 +1,8 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-option java_package = "AirConditioningService";
-option java_outer_classname = "SmartHotelRoomImpl";
+option java_package = "AirConService";
+option java_outer_classname = "AirConServiceImpl";
 
 package AirConService;
 

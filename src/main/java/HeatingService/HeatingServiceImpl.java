@@ -3,8 +3,8 @@
 
 package HeatingService;
 
-public final class SmartHotelRoomImpl {
-  private SmartHotelRoomImpl() {}
+public final class HeatingServiceImpl {
+  private HeatingServiceImpl() {}
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistryLite registry) {
   }
@@ -68,7 +68,7 @@ public final class SmartHotelRoomImpl {
       "\000\022d\n\020Heating_turnDown\022\'.HeatingService.H" +
       "eating_turnDownRequest\032%.HeatingService." +
       "Heating_turnDownReply\"\000B&\n\016HeatingServic" +
-      "eB\022SmartHotelRoomImplP\001b\006proto3"
+      "eB\022HeatingServiceImplP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

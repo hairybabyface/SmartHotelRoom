@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option java_multiple_files = true;
 option java_package = "HeatingService";
-option java_outer_classname = "SmartHotelRoomImpl";
+option java_outer_classname = "HeatingServiceImpl";
 
 package HeatingService;
 

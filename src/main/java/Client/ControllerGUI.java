@@ -14,7 +14,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
-import AirConditioningService.AirConServiceGrpc;
+import AirConService.AirConServiceGrpc;
 import HeatingService.HeatingServiceGrpc;
 import PowerService.PowerServiceGrpc;
 import io.grpc.ManagedChannel;
@@ -172,10 +172,10 @@ public class ControllerGUI implements ActionListener{
 			  AirConServiceGrpc.AirConServiceBlockingStub blockingStub = AirConServiceGrpc.newBlockingStub(channel);
 
 			  //preparing message to send
-			  AirConditioningService.AirCon_turnOnRequest request = AirConditioningService.AirCon_turnOnRequest.newBuilder().setText(e1).build();
+			  AirConService.AirCon_turnOnRequest request = AirConService.AirCon_turnOnRequest.newBuilder().setText(e1).build();
 
 			  //retrieving reply from service
-			  AirConditioningService.AirCon_turnOnReply reply = blockingStub.airConTurnOn(request);
+			  AirConService.AirCon_turnOnReply reply = blockingStub.airConTurnOn(request);
 
 			  reply1.setText( String.valueOf(reply));
 			}	
@@ -186,10 +186,10 @@ public class ControllerGUI implements ActionListener{
 			   AirConServiceGrpc.AirConServiceBlockingStub blockingStub = AirConServiceGrpc.newBlockingStub(channel);
 
 			   //preparing message to send
-			   AirConditioningService.AirCon_turnUpRequest request = AirConditioningService.AirCon_turnUpRequest.newBuilder().setText(e1).build();
+			   AirConService.AirCon_turnUpRequest request = AirConService.AirCon_turnUpRequest.newBuilder().setText(e1).build();
 
 			   //retrieving reply from service
-			   AirConditioningService.AirCon_turnUpReply reply = blockingStub.airConTurnUp(request);
+			   AirConService.AirCon_turnUpReply reply = blockingStub.airConTurnUp(request);
 
 			   reply1.setText( String.valueOf(reply));
 			}	
@@ -200,10 +200,10 @@ public class ControllerGUI implements ActionListener{
 			   AirConServiceGrpc.AirConServiceBlockingStub blockingStub = AirConServiceGrpc.newBlockingStub(channel);
 
 			   //preparing message to send
-			   AirConditioningService.AirCon_turnDownRequest request = AirConditioningService.AirCon_turnDownRequest.newBuilder().setText(e1).build();
+			   AirConService.AirCon_turnDownRequest request = AirConService.AirCon_turnDownRequest.newBuilder().setText(e1).build();
 
 			   //retrieving reply from service
-			   AirConditioningService.AirCon_turnDownReply reply = blockingStub.airConTurnDown(request);
+			   AirConService.AirCon_turnDownReply reply = blockingStub.airConTurnDown(request);
 
 			   reply1.setText( String.valueOf(reply));
 			}	
@@ -246,7 +246,7 @@ public class ControllerGUI implements ActionListener{
 			//retrieving reply from service
 			PowerService.Power_turnOnReply reply = blockingStub.powerTurnOn(request);
 
-			reply3.setText( String.valueOf( reply.getLength()) );
+			reply3.setText( String.valueOf( reply) );
 		
 		}else{
 			

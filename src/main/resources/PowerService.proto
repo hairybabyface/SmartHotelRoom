@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option java_multiple_files = true;
 option java_package = "PowerService";
-option java_outer_classname = "SmartHotelRoomImpl";
+option java_outer_classname = "PowerServiceImpl";
 
 package PowerService;
 
@@ -19,7 +19,7 @@ message Power_turnOnRequest {
 }
 
 message Power_turnOnReply {
-  int32 length = 1;
+  string text = 1;
 }
 
 message Power_turnOffRequest {
@@ -27,7 +27,7 @@ message Power_turnOffRequest {
 }
 
 message Power_turnOffReply {
-  int32 length = 1;
+  string text = 1;
 }
 
 message Power_cardWarningRequest {
@@ -35,5 +35,5 @@ message Power_cardWarningRequest {
 }
 
 message Power_cardWarningReply {
-  int32 length = 1;
+  string text = 1;
 }

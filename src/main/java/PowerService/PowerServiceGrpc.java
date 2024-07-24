@@ -394,7 +394,7 @@ public final class PowerServiceGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return PowerService.SmartHotelRoomImpl.getDescriptor();
+      return PowerService.PowerServiceImpl.getDescriptor();
     }
 
     @java.lang.Override
