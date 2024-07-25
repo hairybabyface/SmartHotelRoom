@@ -262,8 +262,49 @@ public class ControllerGUI implements ActionListener{
 		}
 		else if (label.equals("Send Power service request")) 
 		{
-			
-		
+		   if(e3.equals("Turn on power"))
+		   {
+		      ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50051).usePlaintext().build();
+			  PowerServiceGrpc.PowerServiceBlockingStub blockingStub = PowerServiceGrpc.newBlockingStub(channel);
+
+			  //preparing message to send
+			  PowerService.Power_turnOnRequest request = PowerService.Power_turnOnRequest.newBuilder().setText(e3).build();
+
+			  //retrieving reply from service
+			  PowerService.Power_turnOnReply reply = blockingStub.powerTurnOn(request);
+
+			  reply3.setText( String.valueOf(reply));
+			}	
+			else if(e3.equals("Turn off power")) 
+			{
+			   ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50051).usePlaintext().build();
+			   PowerServiceGrpc.PowerServiceBlockingStub blockingStub = PowerServiceGrpc.newBlockingStub(channel);
+
+			   //preparing message to send
+			   PowerService.Power_turnOffRequest request = PowerService.Power_turnOffRequest.newBuilder().setText(e3).build();
+
+			   //retrieving reply from service
+			   PowerService.Power_turnOffReply reply = blockingStub.powerTurnOff(request);
+
+			   reply3.setText( String.valueOf(reply));
+			}	
+			else if(e3.equals("Send card warning")) 
+			{
+			   ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50051).usePlaintext().build();
+			   PowerServiceGrpc.PowerServiceBlockingStub blockingStub = PowerServiceGrpc.newBlockingStub(channel);
+
+			   //preparing message to send
+			   PowerService.Power_cardWarningRequest request = PowerService.Power_cardWarningRequest.newBuilder().setText(e3).build();
+
+			   //retrieving reply from service
+			   PowerService.Power_cardWarningReply reply = blockingStub.powerCardWarning(request);
+
+			   reply3.setText( String.valueOf(reply));
+			}		 
+			else
+			{
+			   reply3.setText("ERROR: Invalid Request");
+			}
 		}
 	}
 }
