@@ -163,6 +163,8 @@ public class ControllerGUI implements ActionListener{
 		JButton button = (JButton)e.getSource();
 		String label = button.getActionCommand();  
 		String e1 = entry1.getText();
+		String e2 = entry2.getText();
+		String e3 = entry3.getText();
 
 		if (label.equals("Send Air Conditioning service request")) 
 		{
@@ -212,46 +214,56 @@ public class ControllerGUI implements ActionListener{
 		      reply1.setText("ERROR: Invalid Request");
 		    }
 		}
-		else if (label.equals("Invoke Heating Service")) {
-			System.out.println("Heating Service to be invoked ...");
+		else if (label.equals("Send Heating service request")) 
+		{
+		   if(e2.equals("Turn on heating"))
+		   {
+		      ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50051).usePlaintext().build();
+			  HeatingServiceGrpc.HeatingServiceBlockingStub blockingStub = HeatingServiceGrpc.newBlockingStub(channel);
 
-		
-			/*
-			 * 
-			 */
-			ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50052).usePlaintext().build();
-			HeatingServiceGrpc.HeatingServiceBlockingStub blockingStub = HeatingServiceGrpc.newBlockingStub(channel);
+			  //preparing message to send
+			  HeatingService.Heating_turnOnRequest request = HeatingService.Heating_turnOnRequest.newBuilder().setText(e2).build();
 
-			//preparing message to send
-			HeatingService.Heating_turnOnRequest request = HeatingService.Heating_turnOnRequest.newBuilder().setText(entry2.getText()).build();
+			  //retrieving reply from service
+			  HeatingService.Heating_turnOnReply reply = blockingStub.heatingTurnOn(request);
 
-			//retrieving reply from service
-			HeatingService.Heating_turnOnReply reply = blockingStub.heatingTurnOn(request);
+			  reply2.setText( String.valueOf(reply));
+			}	
+			else if(e2.equals("Turn up heating")) 
+			{
+			   ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50051).usePlaintext().build();
+			   HeatingServiceGrpc.HeatingServiceBlockingStub blockingStub = HeatingServiceGrpc.newBlockingStub(channel);
 
-			reply2.setText( String.valueOf(reply));
-			
-		}else if (label.equals("Invoke Power Service")) {
-			System.out.println("Power Service to be invoked ...");
+			   //preparing message to send
+			   HeatingService.Heating_turnUpRequest request = HeatingService.Heating_turnUpRequest.newBuilder().setText(e2).build();
 
-		
-			/*
-			 * 
-			 */
-			ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50053).usePlaintext().build();
-			PowerServiceGrpc.PowerServiceBlockingStub blockingStub = PowerServiceGrpc.newBlockingStub(channel);
+			   //retrieving reply from service
+			   HeatingService.Heating_turnUpReply reply = blockingStub.heatingTurnUp(request);
 
-			//preparing message to send
-			PowerService.Power_turnOnRequest request = PowerService.Power_turnOnRequest.newBuilder().setText(entry3.getText()).build();
+			   reply2.setText( String.valueOf(reply));
+			 }	
+			 else if(e2.equals("Turn down heating")) 
+			 {
+				 ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50051).usePlaintext().build();
+				 HeatingServiceGrpc.HeatingServiceBlockingStub blockingStub = HeatingServiceGrpc.newBlockingStub(channel);
 
-			//retrieving reply from service
-			PowerService.Power_turnOnReply reply = blockingStub.powerTurnOn(request);
+				 //preparing message to send
+				 HeatingService.Heating_turnDownRequest request = HeatingService.Heating_turnDownRequest.newBuilder().setText(e2).build();
 
-			reply3.setText( String.valueOf( reply) );
-		
-		}else{
-			
+				 //retrieving reply from service
+				 HeatingService.Heating_turnDownReply reply = blockingStub.heatingTurnDown(request);
+
+				 reply2.setText( String.valueOf(reply));
+			  }	
+			  else
+			  {
+			     reply2.setText("ERROR: Invalid Request");
+			  }
 		}
-
+		else if (label.equals("Send Power service request")) 
+		{
+			
+		
+		}
 	}
-
 }
