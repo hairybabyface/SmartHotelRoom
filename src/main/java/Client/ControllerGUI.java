@@ -73,7 +73,7 @@ public class ControllerGUI implements ActionListener{
 		panel.add(entry2);
 		panel.add(Box.createRigidArea(new Dimension(10, 0)));
 
-		JButton button = new JButton("Invoke Heating Service");
+		JButton button = new JButton("Send Heating service request");
 		button.addActionListener(this);
 		panel.add(button);
 		panel.add(Box.createRigidArea(new Dimension(10, 0)));
@@ -103,7 +103,7 @@ public class ControllerGUI implements ActionListener{
 		panel.add(entry3);
 		panel.add(Box.createRigidArea(new Dimension(10, 0)));
 
-		JButton button = new JButton("Invoke Power Service");
+		JButton button = new JButton("Send Power service request");
 		button.addActionListener(this);
 		panel.add(button);
 		panel.add(Box.createRigidArea(new Dimension(10, 0)));
